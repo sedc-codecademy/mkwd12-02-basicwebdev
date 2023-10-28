@@ -1,7 +1,5 @@
-# Group [NUMBER]
-
-[INFO]
+# Group 1
 
 ## Contact
-- [POSITION] [NAME] [EMAIL]
-- [POSITION]  [NAME] [EMAIL]
+- Trainer: Ivo Kostovski ivo.kostovski@gmail.com
+- Assistant: Iva Cvetkovska [EMAIL]
