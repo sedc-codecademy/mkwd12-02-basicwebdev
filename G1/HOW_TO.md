@@ -4,7 +4,7 @@
 
 1. Go this [link](https://code.visualstudio.com/Download)
 2. Pick the right version for your OS
-![img_1.png](img_1.png)
+![./imgs/img_1.png](./imgs/img_1.png)
 3. Download it
 4. Click on the downloaded file to start the installation
 5. Follow the instructions (click next on all the steps, EXCEPT the one where you can choose to create a "Open with Code" shortcut)
@@ -33,7 +33,7 @@ I. By using GitHub Desktop
 1. Go to the repository you want to clone
 2. Click on the green "Code" button
 3. Click on "Open with GitHub Desktop"
-![img_2.png](img_2.png)
+![./imgs/img_2.png](./imgs/img_2.png)
 4. Choose where you want to save the repository on your computer
 5. Click on "Clone"
 
@@ -41,7 +41,7 @@ II. Download the repository as a zip file
 1. Go to the repository you want to clone
 2. Click on the green "Code" button
 3. Click on "Download ZIP"
-![img_3.png](img_3.png)
+![./imgs/img_3.png](./imgs/img_3.png)
 4. Choose where you want to save the repository on your computer
 5. Click on "Save"
 6. Go to the folder where you saved the repository
