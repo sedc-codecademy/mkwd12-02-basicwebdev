@@ -49,3 +49,25 @@ II. Download the repository as a zip file
 8. Choose where you want to extract the files
 9. Click on "Extract"
 10. Go to the folder where you extracted the files to see the files you've downloaded
+
+## How to create a GitHub repository
+1. Go to GitHub
+2. Click on the "+" button in the top right corner
+3. Click on "New repository"
+4. Choose a name for your repository (ex. HTML_CSS_homework)
+5. Choose if you want the repository to be public
+6. Check the box "Initialize this repository with a README"
+7. Click on "Create repository"
+8. Now you have created a repository
+
+Now you can clone this repository locally, and start working on it. Create folders and files on your local computer, and then push them to GitHub.
+
+## How to push changes to GitHub
+1. Open GitHub Desktop
+2. Make sure you have selected your repository in the top left corner
+3. Write a summary of the changes you've made in the "Summary" box
+4. Click on "Commit to main"
+5. Click on "Push origin"
+6. Now you have pushed your changes to GitHub
+7. Go to your repository on GitHub to see the changes
+
