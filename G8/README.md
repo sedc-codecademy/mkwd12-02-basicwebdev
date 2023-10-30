@@ -1,7 +1,6 @@
-# Group [NUMBER]
-
-[INFO]
+# Group 8
 
 ## Contact
-- [POSITION] [NAME] [EMAIL]
-- [POSITION]  [NAME] [EMAIL]
+
+- Trainer: Kliment Sidorov sidorov_kliment@live.com
+- Kotrainer: Halil Halilovic halil.halilovic.w@gmail.com
