@@ -1,4 +1,4 @@
-# Group [NUMBER]
+# Group G5
 
 [INFO]
 
