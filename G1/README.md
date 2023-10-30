@@ -2,4 +2,4 @@
 
 ## Contact
 - Trainer: Ivo Kostovski ivo.kostovski@gmail.com
-- Assistant: Iva Cvetkovska [EMAIL]
+- Assistant: Iva Cvetkovska ivacvetkovska.sedc@gmail.com
