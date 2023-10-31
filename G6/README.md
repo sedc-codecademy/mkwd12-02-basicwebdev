@@ -1,7 +1,6 @@
-# Group [NUMBER]
-
-[INFO]
+# Group 7
 
 ## Contact
-- [POSITION] [NAME] [EMAIL]
-- [POSITION]  [NAME] [EMAIL]
+
+- Dimitrov Gjorge dimitrov.gjorge@gmail.com
+- Dobrinova Roze rozedobrinova2003@gmail.com
