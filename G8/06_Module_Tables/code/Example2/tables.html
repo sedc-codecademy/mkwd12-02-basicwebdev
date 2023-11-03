@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+</head>
+<body>
+    <table border="2">
+        <thead>
+            <th>Last Name</th>
+            <th>Sales</th>
+            <th>Country</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Smith</td>
+                <td>$16,000</td>
+                <td>US</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>$15,000</td>
+                <td>UK</td>
+            </tr>
+            <tr>
+                <td>Williams</td>
+                <td>$18,000</td>
+                <td>US</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table border="2">
+        <colgroup>
+            <col span="1" style="background-color: aqua;" >
+        </colgroup>
+        <thead>
+            <tr>
+                <th></th>
+                <th>9am</th>
+                <th>10am</th>
+                <th>11am</th>
+                <th>12am</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Monday</th>
+                <td colspan="2" bgcolor="lime">Geography</td>
+                <!-- <td></td> We don't need this cell when we have colspan -->
+                <td>Math</td>
+                <td rowspan="2">Art</td>
+            </tr>
+            <tr>
+                <th>Tuesday</th>
+                <td colspan="3">Gym</td>
+                <!-- <td></td> -->
+                <!-- <td></td> -->
+                <!-- <td>Art</td> -->
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
