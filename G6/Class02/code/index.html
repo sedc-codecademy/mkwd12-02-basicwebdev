@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>My-Shop</title>
+</head>
+
+<body>
+    <!-- This is the welcoming message -->
+    <h1>Hello from class 2</h1>
+    <h1>This is the main title of our page.</h1>
+    <h2>Today we gonna learn about headings.</h2>
+    <h3>This is level 3 of heading.</h3>
+    <h4>This is level 4 of heading.</h4>
+    <h5>This is level 5 of heading.</h5>
+    <h6>This is level 6 of heading.</h6>
+
+    <!-- h7 element is not existing
+        and it will not be treated as HEADING element.
+        Using it, won't break our. -->
+    <h7>This is level 7 of heading.</h7>
+    <p>Some dummy content</p>
+    <!-- 
+            This is our first paragraph in the page
+            it contains information about the class today.
+         -->
+
+    <!-- 
+            We can nest elements
+            In this case, this content will have
+            the size or attributes of h6
+         -->
+    <h6>
+        <p>Content here</p>
+    </h6>
+
+
+
+    <p>Today we gonna learn more about HTML</p>
+    <!-- Lorem is dummy text, generated from the editor.
+    We can generate it by typing loream and hit enter or click on it -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+       <br/> Eum reprehenderit sed quam at ipsam ex voluptate porro,
+        perferendis quisquam rem! Enim officia cum inventore
+        rem culpa dolorum mollitia voluptatum facere!
+    </p>
+
+    <!-- 
+        - In HTML we have 2 different elements
+        1. Closing elements (are those elements that have closing tag)
+        2. Self-Closing Elements (are those elements that do not have closing that,
+        they close by themselves.)
+     -->
+
+    <!-- CLOSING ELEMENTS -->
+    <h5>H5 is closing element, it has it's own closing tag</h5>
+    <!-- hr is self closing tag, it stands for horizontal line (divider) -->
+    <!-- we put / before the more then sign in the self closing tag
+    this is good practice =)
+     -->
+    <hr />
+    <p>My best favourite food is sarma.</p>
+    <p>My best soft drink is, apple juice.</p>
+    <!-- br is self closing tag, it stands for break, it will drop 
+    in new line -->
+    <br />
+
+    <hr />
+    <h3>Ordered List</h3>
+    <h4>My basket</h4>
+
+    <!-- 
+    - ol is closing element, it has closing tag, and it stands for
+    ordered list.
+    - li is closing element, it is used ONLY in ordered list and unordered list, and here
+    we specify the values we want to order.
+ -->
+    <ol>
+       <li>Bread</li>
+       <li>Milk</li>
+       <li>Bananas</li>
+       <li>Juice</li>
+    </ol>
+
+    <hr />
+    <h3>Unordered list</h3>
+    <h4>Programming languages</h4>
+
+    <!-- 
+        - ul is closing element, it has closing tag, and it stands for
+        unordered list.
+     -->
+    <ul>
+        <li>Javascript</li>
+        <li>Java</li>
+        <li>C#</li>
+        <li>Python</li>
+    </ul>
+
+    <hr />
+    <h3>Description lists</h3>
+
+    <!-- 
+        - dl stands for description list, it has closing tag.
+        - dt stands for description title/name.
+        - dd stands for description definition, which is actually the definition
+        for the dt tag.
+     -->
+    <dl>
+      <dt>What is HTML?</dt>
+      <dd>HTML stands for hyper text and markup language.</dd>
+
+      <dt>What language is C#</dt>
+      <dd>C# OOP, object oriented programming language.</dd>
+    </dl>
+
+    <dl id="bestClub">
+        <dt>What is the BEST football club?</dt>
+        <dd>Chelsea</dd>
+    </dl>
+
+    <hr />
+    <h3>Nested unordered list one</h3>
+    <!-- Nested unordered list -->
+    <!-- ul elements can have type attribute 
+    but it is not longer used and supported across browsers.
+    to explicitly change the numbering we must use CSS -->
+    <ul > 
+        <li>
+            Movies
+            <ul>
+                <li>Sci-Fi
+                    <ul>
+                        <li>Harry Potter</li>
+                        <li>The Hobbit</li>
+                        <li>Starwars</li>
+                    </ul>
+                </li>
+                <li>Horror
+                    
+                </li>
+                <ul>
+                    <li>The Ring</li>
+                    <li>Saw</li>
+                </ul>
+                <li>Action
+                    <ol>
+                        <li>John Wick</li>
+                        <li>Lock, Stock and Two Smoking Barrels</li>
+                    </ol>
+                </li>
+            </ul>
+        </li>
+
+        <li>
+            Songs
+        </li>
+    </ul>
+
+    <hr />
+    <h3 id="nestedOrderList">Nested ordered list</h3>
+    <!-- Nested ordered list -->
+    <!-- HTML Elements can have attributes. They give
+    additional explanation or functionality to the element itself
+    they go in KEY VALUE PAIRS. key="value"
+    -->
+    <!-- ol has attribute type
+    it values can be I, i, A, a, 1(the default one) 
+    in this case, type is KEY, "I" is value, and they are connected by =
+    -->
+    <ol type="I">
+        <li>
+            From Market
+            <ol type="i">
+                <li>Bread</li>
+                <li>Coffee</li>
+                <li>Sparkling Water</li>
+            </ol>
+        </li>
+
+        <li>
+            From <b> Green Market </b>
+            <ol type="A">
+                <b>
+                    <li>Bananas</li>
+                    <li>Strawberries</li>
+                    <li>Tomatoes</li>
+                </b>
+            </ol>
+        </li>
+    </ol>
+
+    <hr />
+    <h3>Inline Format style</h3>
+    <p> <b>Lorem ipsum dolor</b> sit amet  <i> consectetur adipisicing </i> elit. 
+       <u> Quis accusantium </u> iste maiores <sup> eveniet recusandae </sup>, 
+        harum porro enim repudiandae blanditiis commodi magni id, 
+        rem, molestiae sunt! <sub> Numquam molestias placeat in maxime. </sub>
+    </p>
+
+    <p> My fullname is <b> <i> John Doe </i> </b>  </p>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML Tables</title>
+</head>
+
+<body>
+
+    <h1>Tables in HTML</h1>
+
+    <h2>Basic table structure</h2>
+    <!-- basic table structure -->
+    <table border="1" cellpadding="5" cellspacing="5">
+        <!-- table body -->
+        <tbody>
+            <!-- Row 01 -->
+            <tr>
+                <td>Column 01</td>
+                <td>Column 02</td>
+                <td>Column 03</td>
+            </tr>
+            <!-- Row 02 -->
+            <tr>
+                <td>Column 01</td>
+                <td>Column 02</td>
+                <td>Column 03</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <h2>Complete table structure</h2>
+    <!-- complete table structure -->
+    <table border="1" cellpading="10" cellspacing="10">
+        <caption>Code Academy Timetable (November - Week 04)</caption>
+
+        <!-- table header -->
+        <thead>
+            <tr>
+                <th scope="col">Groups</th>
+                <th scope="col">22.11 Monday</th>
+                <th scope="col">23.11 Tuasday</th>
+                <th scope="col">24.11 Wednesday</th>
+                <th scope="col">25.11 Thursday</th>
+                <th scope="col">26.11 Friday</th>
+                <th scope="col">27.11 Saturday</th>
+                <th scope="col">28.11 Sunday</th>
+            </tr>
+        </thead>
+
+        <!-- table body -->
+        <tbody>
+            <!-- G1 -->
+            <tr>
+                <th scope="row">G1</th>
+                <td>HTML & CSS (4)</td>
+                <td></td>
+                <td>HTML & CSS (5)</td>
+                <td></td>
+                <td rowspan="3">Day Off</td>
+                <td></td>
+                <td rowspan="3">Day Off</td>
+            </tr>
+
+            <!-- G2 -->
+            <tr>
+                <th scope="row">G2</th>
+                <td></td>
+                <td>HTML & CSS (3)</td>
+                <td></td>
+                <td>HTML & CSS (4)</td>
+                <td>HTML & CSS (5)</td>
+            </tr>
+
+            <!-- G3 -->
+            <tr>
+                <th scope="row">G3</th>
+                <td>HTML & CSS (4)</td>
+                <td></td>
+                <td>HTML & CSS (5)</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+
+        <!-- table footer -->
+        <tfoot>
+            <tr>
+                <th scope="row">Time</th>
+                <td colspan="5">17:30h - 20:45h</td>
+                <td>09:00h - 12:15h</td>
+                <td></td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+</body>
+
+</html>

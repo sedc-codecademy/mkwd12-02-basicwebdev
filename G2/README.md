@@ -1,7 +1,6 @@
-# Group [NUMBER]
+# Group 2
 
-[INFO]
 
 ## Contact
-- [POSITION] [NAME] [EMAIL]
-- [POSITION]  [NAME] [EMAIL]
+- Trainer Ivan Jamandilovski jamandilovski@gmail.com
+- Assistant Ivan Apostolovski ivan.apostolovski@gmail.com
