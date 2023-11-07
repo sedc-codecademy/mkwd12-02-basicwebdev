@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 04</title>
+</head>
+<body>
+    <!-- Example form 01 -->
+    <form action="example.php" method="GET">
+        This is some content that is inserted in the form!
+    </form>
+
+    <!-- Username form 02 -->
+    <form action="" method="POST">
+        <label for="username"> Username :</label>
+        <input type="text" name="username" id="username">
+
+        <label for="password"> Password :</label>
+        <input type="password" name="password" id="password">
+
+        <label for="comments"> What did you think of this gig?</label>
+        <textarea name="comments" id="comments" cols="50" rows="4"></textarea>
+    </form>
+    
+    <!-- Radio button form 03 -->
+    <form action="" method="POST">
+        <p>Please select your favorite genre:</p>
+        <input checked type="radio" name="genre" value="rock" id="rock"/> 
+        <label for="rock">Rock</label>
+        <input type="radio" name="genre" value="pop" id="pop"/>
+        <label for="pop">Pop</label>
+        <input type="radio" name="genre" value="jazz" id="jazz"/>
+        <label for="jazz">Jazz</label>
+    </form>
+    <!-- Checkbox form 03 -->
+    <form action="" method="POST">
+        <p>Please select your favorite music service(s):</p>
+    
+        <input type="checkbox" name="service"
+        value="itunes" checked id="itunes" />
+        <label for="itunes">iTunes</label>
+        <input type="checkbox" name="service"
+        value="lastfm" id="lastfm" />
+        <label for="lastfm">Last.fm</label>
+        <input type="checkbox" name="service"
+        value="spotify" id="spotify" />
+        <label for="spotify">Spotify</label>
+    
+    </form>
+
+    <!-- Select form 04 -->
+    <form action="" method="POST">
+        <label for="devices">What device do you listen to music on?</label>
+        <select name="devices" id="devices">
+            <option value="ipod">iPod</option>
+            <option value="radio" selected>Radio</option>
+            <option value="computer">Computer</option>
+        </select>
+    </form>
+
+    <!-- Multiple select form 05 -->
+    <form action="" method="POST">
+        <label for="instruments">Do you play any of the following instruments?</label>
+            <select name="instruments" id="instruments" size="10" multiple="multiple">
+                <option value="guitar" selected>
+                Guitar</option>
+                <option value="drums">Drums</option>
+                <option value="keyboard"
+                selected="selected">Keyboard</option>
+                <option value="bass">Bass</option>
+            </select>
+        </form>
+        
+        <form action="" method="POST">
+            <label for="user-song">Upload your song in MP3 format:</label>
+            <input type="file" name="user-song" id="user-song" />
+        </form>
+
+
+        <form action="" method="POST">
+            <label for="email">Subscribe to our email list:</p>
+            <input required type="text" name="email" id="email" />
+            <input required type="submit" value="Subscribe" />
+            <input required type="reset" value="Reset Form" />
+        </form>
+
+        <form action="button.php">
+            <button>
+                <img src="images/icon-plus.svg" alt="plus-sign" 
+                width="10" /> Add
+            </button>
+            <input type="hidden" name="product-code"
+            value="P1234" />
+        </form>
+
+        <fieldset>
+            <legend>Contact details</legend>
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email" />
+            <label for="mobile">Mobile:</label>
+            <input type="text" name="mobile" id="mobile" />
+            <label for="telephone">Telephone:</label>
+            <input type="text" name="telephone" id="telephone" />
+        </fieldset>
+
+
+        <form action="" method="POST">
+            <label for="date">Add date:</label>
+            <input type="date" name="date" id="date">
+        </form>
+
+        <form action="" method="POST">
+            <label for="email">E-mail :</label>
+            <input placeholder="Please enter your e-mail" required type="email" name="email" id="email">
+            <label for="url">Enter URL :</label>
+            <input placeholder="Enter your URL" required type="url" name="url" id="url">
+            <label for="search">Search :</label>
+            <input placeholder="What do you want to search for?" required type="search" name="search" id="search">
+            <input type="submit" value="Submit">
+        </form>
+</body>
+</html>
