@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tables</title>
+  </head>
+  <body>
+    <h1>Tables</h1>
+
+    <h2>First Table Example</h2>
+    <table border="1">
+      <tbody>
+        <tr>
+          <td>100</td>
+          <td>200</td>
+          <td>300</td>
+        </tr>
+        <tr>
+          <td>110</td>
+          <td>220</td>
+          <td>330</td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+    <!-- These attributes below are only for pure html tables, they are not used in projects where we can use css -->
+    <table border="1" cellpadding="3" cellspacing="3">
+      <thead>
+        <tr>
+          <th>Header Row 1, Column 1</th>
+          <th>Header Row 1, Column 2</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Row 1 , Column 1</td>
+          <td>Row 1 , Column 2</td>
+        </tr>
+        <tr>
+          <td>Row 2 , Column 1</td>
+          <td>Row 2 , Column 2</td>
+        </tr>
+        <tr>
+          <td>Row 3 , Column 1</td>
+          <td>Row 3 , Column 2</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Colspan and Rowspan Example</h2>
+    <table border="1" cellpadding="10">
+      <thead>
+        <tr>
+          <th>Col 1</th>
+          <th>Col 2</th>
+          <th>Col 3</th>
+          <th>Col 4</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Row 1 - Col 1</td>
+          <td>Row 1 - Col 2</td>
+          <td>Row 1 - Col 3</td>
+          <td>Row 1 - Col 4</td>
+        </tr>
+        <tr>
+          <td colspan="2">Row 2 - Col 1-2</td>
+          <td colspan="2">Row 2 - Col 3-4</td>
+        </tr>
+        <tr>
+          <td colspan="3">Row 3 - Col 1-3</td>
+          <td>Row 2 - Col 4</td>
+        </tr>
+        <tr>
+          <td rowspan="2">Row 4-5 - Col 1</td>
+          <td rowspan="2">Row 4-5 - Col 2</td>
+          <td>Row 4 - Col 3</td>
+          <td>Row 4 - Col 4</td>
+        </tr>
+        <tr>
+          <td>Row 5 - Col 3</td>
+          <td>Row 5 - Col 4</td>
+        </tr>
+        <tr>
+          <td rowspan="2" colspan="3">Row 6-7 - Col 1-3</td>
+          <td>Row 6 - Col 4</td>
+        </tr>
+        <tr>
+          <td>Row 7 - Col 4</td>
+        </tr>
+        <tr>
+          <td>Row 8 - Col 1</td>
+          <td>Row 8 - Col 2</td>
+          <td>Row 8 - Col 3</td>
+          <td>Row 8 - Col 4</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
