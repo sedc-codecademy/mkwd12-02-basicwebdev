@@ -1,7 +1,6 @@
 # Group G5
 
-[INFO]
 
 ## Contact
-- [POSITION] [NAME] [EMAIL]
-- [POSITION]  [NAME] [EMAIL]
+- Trainer Danilo Borozan daniloborozan07@gmail.com
+- Assistant  Ivan Ivanov ivanovv7@protonmail.com
