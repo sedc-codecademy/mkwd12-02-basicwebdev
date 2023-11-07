@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Forms </title>
+</head>
+<body>
+    <h1> Forms </h1>
+    <form>
+        <label for="username"> Username: </label>
+        <input type="text" placeholder="Enter your username here" name="uname" id="username"/>
+        <!--prevent user from entering content inside the input [disabled]-->
+        <input type="text" disabled placeholder="Enter your username here" value="user.name" name="uname" id="username"/>
+        <br/>
+        <label for="pass"> Password: </label>
+        <input type="password" placeholder="Enter your password" id="pass" name=""/>
+        <br/>
+        <label for="comm"> Your comment: </label>
+        <textarea cols="20" rows="5" id="comm" placeholder="Enter comment here">hi</textarea>
+    </form>
+    <!-- radio buttons -->
+    <form action="">
+        <p> Your fav type of music</p>
+        <input type="radio" name="genre" id="rock"/>
+        <label for="rock"> Rock </label>
+        <br/>
+        <input type="radio" name="genre" id="pop"/>
+        <label for="pop"> Pop </label>
+        <br/>
+        <input type="radio" checked name="genre" id="folk"/>
+        <label for="folk"> Folk </label>
+    </form>
+    <!-- checkbox-->
+    <form action="" method="post">
+        <p> Select fav music service </p>
+        <input type="checkbox" name="service" id="itunes"/>
+        <label for="itunes"> Itunes</label>
+        <br/>
+        <input type="checkbox" checked name="service" id="lastfm">
+        <label for="lastfb"> LastFm </label> 
+    </form>
+    <!-- dropdown/select -->
+    <form>
+        <label for="cities"> Cities: </label>
+        <select id="cities">
+            <!-- <option> Select city: </option> -->
+            <option value="sk"> Skopje </option>
+            <option value="bt"> Bitola </option>
+            <option> Prilep </option>
+            <option> Kicevo </option>
+            <option selected> Veles </option>
+            <option> Strumica </option>
+            <option> Krusevo </option>
+            <option> Ohrid </option>
+            <option> Kumanovo </option>
+        </select>
+    </form>
+    <br/>
+    <!-- multi dropdown/select-->
+    <form>
+        <label for="mcities"> Cities:</label>
+        <select id="mcities" size="6" multiple>
+            <!-- <option> Select city: </option> -->
+            <option value="sk"> Skopje </option>
+            <option value="bt"> Bitola </option>
+            <option> Prilep </option>
+            <option> Kicevo </option>
+            <option selected> Veles </option>
+            <option> Strumica </option>
+            <option> Krusevo </option>
+            <option> Ohrid </option>
+            <option> Kumanovo </option>
+    </select>
+    </form>
+    <!-- upload file-->
+    <form>
+        <label for="profile-img"> Upload image </label>
+        <input type="file" id="profile-img"/>
+    </form>
+    <!-- submit button -->
+    <form action="Input">
+        <label for="email"> Email </label>
+        <input type="email" id="email" placeholder="Enter your email"/>
+        <input type="submit" value="Send"/>
+    </form>
+    <!-- button -->
+    <form>
+        <button> click me </button>
+        <input type="hidden"/>
+    </form> 
+    <!-- grouping form elements and validation -->
+    <form>
+        <fieldset>
+            <legend> Contact details </legend>
+            <label for="name"> Name </label>
+            <input type="text" required id="name"/>
+            <label for="email"> Email </label>
+            <input type="email" required id="email">
+            <input type="date">
+            <input type="submit">
+        </fieldset>
+    </form>
+</body>
+</html>

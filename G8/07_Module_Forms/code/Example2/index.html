@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h3>Forms</h3>
+    <form action="" method="GET">
+        <fieldset>
+            <legend>Sign up form</legend>
+            <!-- First way of writing label element -->
+            <label for="firstname">First Name: </label>
+            <input type="text" name="firstname" id="firstname">
+
+            <!-- firstname=Irena -->
+
+            <br><br>
+
+            <!-- Second way of writing label element -->
+            <label for="secondname">
+                Second Name:
+                <input type="text" name="secondname" id="secondname" placeholder="Enter your second name">
+            </label>
+
+            <!-- secondname=Panova -->
+
+            <br><br>
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+
+            <label for="pass">Password: </label>
+            <input type="password" name="password" id="pass" minlength="8">
+
+            <!-- password=pass -->
+
+            <br><br>
+
+            <label for="gigComments">What did you like about this gig?</label>
+            <textarea id="gigComments" name="gigComments">Enter your comments...</textarea>
+
+            <br><br>
+
+            <label for="comments">Tell us your experience: </label>
+            <!-- Textarea with a placeholder -->
+            <textarea id="comments" name="comments" cols="40" rows="10" placeholder="Enter your comments..."></textarea>
+
+            <input type="submit" value="Sign up">
+            <input type="reset" value="Reset Form">
+        </fieldset>
+    </form>
+
+    <hr>
+
+    <!-- Form containing radio buttons -->
+    <h4>Raido Buttons Form</h4>
+    <form action="" method="GET">
+        <p>Please select your favourte genre: </p>
+
+        <input type="radio" name="genre" id="pop" value="pop" >
+        <label for="pop">Pop</label>
+        <input type="radio" name="genre" id="rock" value="rock" checked>
+        <label for="rock">Rock</label>
+        <input type="radio" name="genre" id="jazz" value="jazz">
+        <label for="jazz">Jazz</label>
+
+        <button>
+            <img src="images/plus-sign.png" width="20">
+        </button>
+
+        <input type="hidden" name="product-code" value="P1234">
+
+        <!-- genre=rock -->
+    </form>
+
+    <hr>
+
+    <!-- Form containing checkboxes -->
+    <form action="" method="GET">
+        <p>Please select your favorite music service(s): </p>
+        <input type="checkbox" name="service" id="itunes" value="itunes">
+        <label for="itunes">iTunes</label>
+        <input type="checkbox" name="service" id="livefm" value="livefm">
+        <label for="livefm">Live FM</label>
+        <input type="checkbox" name="service" id="spotifty" value="spotify">
+        <label for="spotify">Spotify</label>
+    </form>
+
+    <hr>
+    <!-- Form containg dropdown -->
+    <form action="" method="GET">
+        <label for="devices">Please select what device do you listen to music on</label>
+        <select name="devices" id="devices">
+            <option value="" disabled selected hidden>Please select device</option>
+            <option value="iPhone">iPhone</option>
+            <option value="radio">Radio</option>
+            <option value="computer">Computer</option>
+        </select>
+    </form>
+    <hr>
+
+    <!-- Form with multiple select -->
+    <form method="GET" action="">
+        <label for="instruments">Select the instruments you play on: </label>
+        <select name="instruments" id="instruments" multiple="multiple" size="3">
+            <option value="guitar">Guitar</option>
+            <option value="bass">Bass</option>
+            <option value="drums">Drums</option>
+            <option value="keyboard">Keyboard</option>
+        </select>
+    </form>
+
+    <hr>
+
+    <!--Form with file input-->
+    <form method="POST" action="">
+        <label for="song">Upload your song</label>
+        <input type="file" name="songFile" id="song">
+    </form>
+</body>
+</html>
