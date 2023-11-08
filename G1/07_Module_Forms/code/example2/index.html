@@ -48,7 +48,91 @@
                     required accept="image/png, image/jpg" />
         </fieldset>
 
-        
+        <fieldset>
+            <legend>Login Info</legend>
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required />
+
+            <br /><br />
+
+            <label for="password">Password</label>
+            <input type="password" name="password"
+                    id="password" required />
+
+            <br /><br />
+
+            <label for="github">GitHub URL</label>
+            <input type="url" name="github" id="github" required />
+        </fieldset>
+
+        <fieldset>
+            <legend>Academy Info</legend>
+
+            <p>Stream</p>
+            <input type="radio" name="stream" id="net" value="net" required />
+            <label for="net">.NET</label>
+
+            <input type="radio" name="stream" id="js" value="js" required />
+            <label for="js">JavaScript</label>
+
+            <p>Academy</p>
+            <input type="radio" name="academy" id="web"
+                    value="web" required />
+            <label for="web">Web Development</label>
+
+            <input type="radio" name="academy" id="design"
+                    value="design" required />
+            <label for="design">Design</label>
+
+            <input type="radio" name="academy" id="qa"
+                    value="qa" required />
+            <label for="qa">QA</label>
+
+            <br /><br />
+
+            <label for="group">Group</label>
+            <select name="group" id="group" required>
+                <option value=""selected disabled
+                        >Please select group...</option>
+                <option value="g1">G1</option>
+                <option value="g2">G2</option>
+                <option value="g3">G3</option>
+                <option value="g4">G4</option>
+                <option value="g5">G5</option>
+            </select>
+
+            <p>Attending classes at:</p>
+
+            <input type="radio" name="attendance" id="online">
+            <label for="online">Online</label>
+
+            <input type="radio" name="attendance" id="skopje">
+            <label for="skopje">Skopje</label>
+
+            <input type="radio" name="attendance" id="ohrid">
+            <label for="ohrid">Ohrid</label>
+
+            <input type="radio" name="attendance" id="nish">
+            <label for="nish">Nish</label>
+
+            <br /><br />
+
+            <label for="subjects">Subject</label>
+            <select name="subjects" id="subjects" multiple required>
+                <option value="HTMLCSS">HTML & CSS</option>
+                <option value="basicJs">Basic JS</option>
+                <option value="advJs">Advanced JS</option>
+            </select>
+        </fieldset>
+
+        <input type="checkbox" name="agree" id="agree" required />
+        <label for="agree">I confirm the data is valid</label>
+
+        <br /><br />
+
+        <button type="reset">Cancel</button>
+        <button type="submit">Submit</button>
     </form>
 </body>
 </html>
