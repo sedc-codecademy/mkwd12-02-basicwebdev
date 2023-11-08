@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example 2 - Forms</title>
+</head>
+<body>
+    <form action="" method="">
+        <h1>SEDC form</h1>
+
+        <fieldset>
+            <legend>Personal Info</legend>
+
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name"
+                    placeholder="ex. Jane Doe" required
+                    maxlength="17" />
+
+            <br /><br />
+
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age"
+                    required min="16" max="99" />
+
+            <br /><br />
+
+            <label for="aboutMe">About me</label>
+            <textarea name="aboutMe" id="aboutMe" cols="30" 
+                        rows="5" required
+                    placeholder="Write something about yourself..."
+                    ></textarea>
+
+            <br /><br />
+
+            <label for="dateOfBirth">Date of birth</label>
+            <input type="date" name="dateOfBirth" id="dateOfBirth" required />
+
+            <br /><br />
+
+            <label for="phoneNumber">Phone number</label>
+            <input type="tel" name="phoneNumber" id="phoneNumber" required />
+            
+            <br /><br />
+
+            <label for="photo">Photo</label>
+            <input type="file" name="photo" id="photo"
+                    required accept="image/png, image/jpg" />
+        </fieldset>
+
+        
+    </form>
+</body>
+</html>
+
+<!-- SHORTCUT: input:date + TAB -->

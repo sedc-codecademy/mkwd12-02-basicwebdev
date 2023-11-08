@@ -54,7 +54,67 @@
 
         <h4>Color input</h4>
 
+        <label for="favColor">Favorite color</label>
+        <input type="color" name="favColor" id="favColor" />
+
         <h4>Range input</h4>
+
+        <label for="rating">Rating</label>
+        <input type="range" name="rating" id="rating" min="1" max="10" step="1" />
+
+        <h4>Textarea</h4>
+
+        <label for="description">Description</label>
+        <textarea id="descrption" name="description"
+                  cols="20" rows="10"
+                  placeholder="Enter description..."></textarea>
+
+        <h4>Radio buttons</h4>
+
+        <p>Vegetables</p>
+        <input type="radio" name="vegetables" id="cucumber" value="cucumber" />
+        <label for="cucumber">Cucumber</label>
+
+        <input type="radio" name="vegetables" id="broccoli" value="broccoli" />
+        <label for="broccoli">Broccoli</label>
+
+        <h4>Checkbox input</h4>
+
+        <p>To do</p>
+        <input type="checkbox" name="goToClass"
+               id="goToClass" value="goToClass" />
+        <label for="goToClass">Go to class</label>
+
+        <input type="checkbox" name="writeHomework" 
+               id="writeHomework" value="writeHomework" />
+        <label for="writeHomework">Write homework</label>
+
+        <h4>Single select</h4>
+
+        <label for="country">Country of origin</label>
+        <select name="country" id="country">
+            <option value="MKD">Macedonia</option>
+            <option value="SRB">Serbia</option>
+            <option value="GR">Greece</option>
+        </select>
+
+        <h4>Multi select</h4>
+
+        <label for="toys">Toys</label>
+        <select name="toys" id="toys" multiple>
+            <option value="" selected disabled>Please select a toy...</option>
+            <option value="car">Car</option>
+            <option value="gun">Gun</option>
+            <option value="ball">Ball</option>
+        </select>
+
+        <h4>Buttons</h4>
+
+        <input type="submit" value="Submit" />
+
+        <button type="submit">Submit</button>
+
+        <button type="reset">Reset</button>
     </form>
 </body>
 </html>
