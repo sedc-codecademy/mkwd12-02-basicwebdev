@@ -1,0 +1,33 @@
+p,
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(254, 0, 191)
+}
+
+#liTag1 {
+    color: lime
+}
+
+#liTag2 {
+    color: fuchsia
+}
+
+#liTag3 {
+    background-color: blue;
+}
+
+.crna-pozadina {
+    background-color: black;
+}
+
+.bel-text {
+    color: blanchedalmond;
+}
+
+.crven-text {
+    color: red;
+}
+
+.zelena-pozadina {
+    background-color: green;
+}

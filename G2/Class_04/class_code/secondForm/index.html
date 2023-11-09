@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second form</title>
+</head>
+
+<body>
+    <form action="" method="post">
+        <fieldset>
+            <legend>Testform</legend>
+
+            <div>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name">
+            </div>
+
+            <div>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password">
+            </div>
+
+            <div>
+                <label for="gender">Gender</label>
+
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="male" value="male">
+
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="female" value="female">
+            </div>
+
+            <!-- contintentws dropdown -->
+            <div>
+                <label for="continentsDropdown">Continent</label>
+                <select name="continentsDropdown" id="continentsDropdown">
+                    <option disabled>Select continent...</option>
+                    <option value="europe">Europe</option>
+                    <option value="asia">Asia</option>
+                    <option value="africa">Africa</option>
+                </select>
+            </div>
+            <!-- meals checkbox -->
+            <div>
+                <label for="mealsCheckbox">Meals checkbox</label>
+
+                <div>
+                    <div>
+                        <label for="breakfast">Breakfast</label>
+                        <input type="checkbox" name="meals" value="breakfast">
+                    </div>
+                    <div>
+                        <label for="lunch">Lunch</label>
+                        <input type="checkbox" name="meals" value="lunch">
+                    </div>
+                    <div>
+                        <label for="dinner">Dinner</label>
+                        <input type="checkbox" name="meals" value="dinner">
+                    </div>
+                </div>
+
+
+            </div>
+            <!-- remark textarea -->
+            <div>
+                <label for="remarkTextArea">Remark text area</label>
+                <textarea name="remarkTextArea" id="remarkTextArea" cols="30" rows="4"
+                    placeholder="Write your remarks here"></textarea>
+            </div>
+
+            <input type="submit" name="submit" id="submit">
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
