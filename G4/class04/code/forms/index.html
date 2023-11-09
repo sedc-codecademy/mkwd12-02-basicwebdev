@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <h1>Forms</h1>
+
+    <h2>Form Example</h2>
+    <form action="#">
+      <fieldset>
+        <legend>Login</legend>
+        <label for="username">Username</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="6-20 characters"
+          required
+        />
+        <br />
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="min 8 characters"
+          required
+        />
+        <br />
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+      </fieldset>
+
+      <br />
+
+      <fieldset>
+        <legend>User Details</legend>
+
+        <label for="comment">Enter Comment</label>
+        <textarea name="comment" id="comment" cols="20" rows="4"></textarea>
+
+        <p>Please select your favorite genre</p>
+
+        <!-- In order to make it so a user can only select one radio out of a group, they all need to have the same name -->
+        <input type="radio" name="genre" value="rock" id="rock" />
+        <label for="rock">Rock</label>
+        <input type="radio" name="genre" value="pop" id="pop" />
+        <label for="pop">Pop</label>
+        <input type="radio" name="genre" value="jazz" id="jazz" />
+        <label for="jazz">Jazz</label>
+
+        <p>Please select your favorite music service(s):</p>
+
+        <input type="checkbox" name="service" value="itunes" id="itunes" />
+        <label for="itunes">iTunes</label>
+        <input
+          type="checkbox"
+          name="service"
+          value="lastfm"
+          id="lastfm"
+          checked
+        />
+        <label for="lastfm">Last.fm</label>
+        <input type="checkbox" name="service" value="spotify" id="spotify" />
+        <label for="spotify">Spotify</label>
+
+        <br />
+        <br />
+
+        <label for="devices">Which device you listen music on?</label>
+        <select name="devices" id="devices">
+          <option value="" disabled selected>Please Select One</option>
+          <option value="ipod">iPod</option>
+          <option value="radio">Radio</option>
+          <option value="computer">Computer</option>
+          <option value="tablet">Tablet</option>
+          <option value="smartphone">Smartphone</option>
+        </select>
+
+        <br /><br />
+        <label for="instruments">
+          Do you play any of the following instruments?
+        </label>
+        <select name="instruments" id="instruments" size="3" multiple>
+          <option value="guitar" selected>Guitar</option>
+          <option value="drums">Drums</option>
+          <option value="keyboard" selected="selected">Keyboard</option>
+          <option value="bass">Bass</option>
+        </select>
+
+        <br /><br />
+
+        <label for="date">Date</label>
+        <input type="date" id="date" name="date" />
+
+        <br /><br />
+        <label for="number">Number</label>
+        <input type="number" id="number" name="number" />
+      </fieldset>
+
+      <br />
+
+      <fieldset>
+        <legend>Contact details</legend>
+        <label for="email">Email:</label>
+        <input type="text" name="email" id="email" />
+        <label for="mobile">Mobile:</label>
+        <input type="text" name="mobile" id="mobile" />
+        <label for="telephone">Telephone:</label>
+        <input type="text" name="telephone" id="telephone" />
+      </fieldset>
+
+      <br />
+      <button type="reset">Cancel</button>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Tables</title>
+</head>
+
+<body>
+    <h1>Tables Class</h1>
+
+    <!-- First and simple table -->
+    <!-- cellpadding => expands the cells -->
+    <!-- cellspacing => adds more space in-between the cells -->
+    <table border="3" cellpadding="5" cellspacing="5">
+        <tbody>
+            <!-- Table row 1 -->
+            <tr>
+                <!-- First cell/column -->
+                <td>
+                    Row 1, Column 1
+                </td>
+                <!-- Second cell/column -->
+                <td>
+                    Row 1, Column 2
+                </td>
+                <!-- Thid cell/column -->
+                <td>
+                    Row 1, Column 3
+                </td>
+            </tr>
+            <!-- Table row 2 -->
+            <tr>
+                <!-- First cell/column -->
+                <td>
+                    Row 2, Column 1
+                </td>
+                <!-- Second cell/column -->
+                <td>
+                    Row 2, Column 2
+                </td>
+                <!-- Thid cell/column -->
+                <td>
+                    Row 2, Column 3
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr />
+    <!-- Table 2 Example -->
+    <!-- <th> tag is as same as <td>
+        but instead the content is bolded, meaning it is 
+        sort of heading value -->
+    <table border="2" cellpadding="10" cellspacing="5">
+        <caption>Users list - Colspan example</caption>
+        <thead>
+            <!-- FIRST ROW -->
+            <tr>
+                <!-- FIRST CELL/COLUMN -->
+                <!-- <th>
+                    First Name  
+                </th> -->
+
+                 <!-- SECOND CELL/COLUMN -->
+                <!-- <th>
+                    Last Name
+                </th> -->
+
+                <!-- colspan means => expand for n (number) of cells -->
+                <!-- colspan with value of 2 means that this cell
+                will expand (take the place) of two cells/columns -->
+                <th colspan="2">
+                    Fullname
+                </th>
+               
+                <!-- THIRD CELL/COLUMN -->
+                <th>
+                    Hobbies
+                </th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <!-- SECOND ROW -->
+            <tr>
+                <!-- FIRST CELL/COLUMN -->
+                <td>
+                    John
+                </td>
+                <!-- SECOND CELL/COLUMN -->
+                <td>
+                    Doe
+                </td>
+                <!-- THIRD CELL/COLUMN -->
+                <td>
+                    Reading
+                </td>
+            </tr>
+
+            <!-- THIRD ROW -->
+            <tr>
+                <!-- FIRST CELL/COLUMN -->
+                <td>
+                    Bob
+                </td>
+                <!-- SECOND CELL/COLUMN -->
+                <td>
+                    Bobski
+                </td>
+                <!-- THIRD CELL/COLUMN -->
+                <td>
+                    Coding
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- Table 3 Example -->
+    <hr />
+    <table border="3" cellspacing="5" cellpadding="10">
+        <caption>Row Span example</caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <td align="center">John Doe</td>
+                <td>Bob Bobski</td>
+                <td>Anna Ann</td>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th rowspan="2" >Social Networks</th>
+                <td>John Doe Facebook URL</td>
+                <td>Bob Bobski Facebook URL</td>
+                <td>Anna Ann Facebook URL</td>
+            </tr>
+
+            <tr>
+                <td>John Doe Instagram URL</td>
+                <td>Bob Bobski Instagram URL</td>
+                <td>Anna Ann Instagram URL</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- Table 4 Example -->
+    <hr />
+    <h2>My weekly todo-list</h2>
+    <table border="3" cellpadding="10" cellspacing="5">
+        <caption>
+            Weekly Todos
+        </caption>
+
+        <thead>
+            <!-- FIRST ROW -->
+            <tr>
+                <th>Days</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+                <th>Sunday</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <!-- SECOND ROW -->
+            <tr>
+                <th>Morning</th>
+                <td>Make bed</td>
+                <td>Go to the gym</td>
+                <td>Walk the dog/cat</td>
+                <td colspan="2">Make Protein Pancakes</td>
+                <td colspan="2" rowspan="2">It's day off AMIGO</td>
+            </tr>
+            <!-- THIRD ROW -->
+            <tr>
+                <th>Before Work</th>
+                <td>Have Breakfast</td>
+                <td>Wash the dishes</td>
+                <td>Practice Coding</td>
+                <td>Call our best friend</td>
+                <td>Make Protein Pancakes</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

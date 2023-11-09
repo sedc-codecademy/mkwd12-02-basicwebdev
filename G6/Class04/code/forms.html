@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Forms</title>
+    </head>
+
+    <body>
+        <h1>Forms Class</h1>
+        <!-- Input is self closing tag -->
+        <!-- type is attribute on the input that specifies the
+        type of the input.
+        <label> is element that is specific for the input, it gives addition
+        explanation
+     -->
+        <h2>Login to our application</h2>
+        <!-- Form Example 1 -->
+        <form>
+            <label for="userName">Enter username:</label>
+            <!-- This input is a form control -->
+            <input 
+                type="text" 
+                placeholder="Enter username..." 
+                id="userName" 
+                name="userName"
+            />
+            <br />
+            <br />
+            <label for="userPassword">Enter password:</label>
+            <input 
+                type="password"
+                placeholder="Enter Password..."
+                id="userPassword"
+                name="userPassword"
+            />
+            <br />
+            <br />
+            <label for="userAge">Enter you age.</label>
+            <input 
+                type="number"
+                id="userAge"
+                name="userAge"
+            />
+            <br />
+            <br />
+            <!-- Input type submit will create us button -->
+            <!-- with value attribute we change the content of the Button -->
+            <input type="submit" value="Login"/>
+        </form>
+
+        <hr />
+        <!-- Form Example 2 -->
+        <!-- If we want to be able to select  -->
+        <form>
+            <h3>What do you prefer?</h3>
+            <label for="samsung">Samsung</label>
+            <input id="samsung" type="radio" name="prefferedPhone"/>
+            <br />
+
+            <label for="iphone">IPhone</label>
+            <input id="iphone" type="radio" name="prefferedPhone" />
+            <br />
+
+            <hr />
+            <label for="pixel">Pixel</label>
+            <input id="pixel" type="radio" name="prefferedSecondPhones"/>
+            <br />
+
+            <label for="nokia">Nokia</label>
+            <input id="nokia" type="radio" name="prefferedSecondPhones"/>
+        </form>
+    </body> 
+</html>
