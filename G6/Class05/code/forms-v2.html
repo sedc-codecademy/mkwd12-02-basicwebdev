@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Forms</title>
+  </head>
+
+  <body>
+    <h1>Forms Class</h1>
+    <!-- Input is self closing tag -->
+    <!-- type is attribute on the input that specifies the
+        type of the input.
+        <label> is element that is specific for the input, it gives addition
+        explanation
+     -->
+    <h2>Login to our application</h2>
+    <!-- Form Example 1 -->
+    <form>
+      <label for="userName">Enter username:</label>
+      <!-- This input is a form control -->
+      <input
+        type="text"
+        placeholder="Enter username..."
+        id="userName"
+        name="userName"
+      />
+      <br />
+      <br />
+      <label for="userPassword">Enter password:</label>
+      <input
+        type="password"
+        placeholder="Enter Password..."
+        id="userPassword"
+        name="userPassword"
+      />
+      <br />
+      <br />
+      <label for="userAge">Enter you age.</label>
+      <input type="number" id="userAge" name="userAge" />
+      <br />
+      <br />
+      <!-- Input type submit will create us button -->
+      <!-- with value attribute we change the content of the Button -->
+      <input type="submit" value="Login" />
+    </form>
+
+    <hr />
+    <!-- Form Example 2 -->
+    <!-- If we want to be able to select  -->
+    <form>
+      <h3>What do you prefer?</h3>
+      <label for="samsung">Samsung</label>
+      <input id="samsung" type="radio" name="prefferedPhone" />
+      <br />
+
+      <label for="iphone">IPhone</label>
+      <input id="iphone" type="radio" name="prefferedPhone" />
+      <br />
+
+      <hr />
+      <label for="pixel">Pixel</label>
+      <input id="pixel" type="radio" name="prefferedSecondPhones" />
+      <br />
+
+      <label for="nokia">Nokia</label>
+      <input id="nokia" type="radio" name="prefferedSecondPhones" />
+    </form>
+
+    <hr />
+    <!-- Form Example 3 -->
+    <form>
+      <label for="birthdate">Enter your birthdate:</label>
+      <input type="date" id="birthdate"/>
+    </form>
+
+    <!-- Form Example 4 -->
+    <hr />
+    <form>
+      <label for="colorPicker">Pick you favourite color:</label>
+      <input type="color" id="colorPicker"/>
+    </form>
+
+    <!-- Form Example 5 -->
+    <hr />
+    <form>
+      <h4>Please select your preffered fruits</h4>
+
+      <!-- the value attribute in the future we gonna use it, to 
+      get the value that the user wrote or choosed. -->
+      <label for="apple">Apple</label>
+      <input type="checkbox" id="apple" value="apple" />
+      
+
+      <label for="pineapple">Pineapple</label>
+      <input type="checkbox" id="pineapple" value="Pineapple"/>
+    </form>
+
+    <hr />
+    <br />
+    <!-- Form More complete example -->
+    <form>
+      <!-- fieldset is element of the form
+      and it groups multiple inputs into once section -->
+      <fieldset>
+        <legend>User info:</legend>
+        <label for="username">Username: </label>
+        <input 
+        type="text" 
+        placeholder="Username..." 
+        id="username"
+        maxlength="10"
+        minlength="2"
+        required="required"
+        />
+
+        <label for="user_password">Password</label>
+        <input 
+        type="password" 
+        placeholder="Password..." 
+        id="user_password"
+        required="required"
+        />
+      </fieldset>
+
+      <fieldset>
+        <legend>Provide addition info:</legend>
+        <label for="moreComments">Please feel free to write more comments</label>
+        <br />
+        <!-- textarea is html element that we provide longer text as user input -->
+        <textarea id="moreComments" cols="40" rows="10"></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>Select region</legend>
+        <label for="region">Region:</label>
+        <select id="region">
+          <option selected="selected" disabled="disabled">Please select a value</option>
+          <option>Macedonia</option>
+          <option>Serbia</option>
+          <option>England</option>
+          <option>USA</option>
+        </select>
+      </fieldset>
+
+      <!-- IMPORTANT!!! => input type="submit" or button or input type reset 
+      MUST be in between THE FORM-->
+
+      <!-- button is as same as <input type="submit" /> -->
+      <button>Login</button>
+      <input type="reset">
+    </form>
+    
+  </body>
+</html>
