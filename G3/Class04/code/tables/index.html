@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Exercise</title>
+</head>
+<body>
+    <!-- Table example basic structure -->
+    <table border="1">
+        <caption>Users</caption>
+        <thead>
+            <th>First and Last Name</th>
+            <th>Email</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Joh Doe</td>
+                <td>johndoegmail.com</td>
+            </tr>
+            <tr>
+                <td>Jill Wayne</td>
+                <td>jillwaynegmail.com</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br><br>
+
+    <!--Table Example with Footer -->
+    <table border="1">
+        <caption>Employee vacation days</caption>
+        <thead>
+            <th>First and Last Name</th>
+            <th>Month</th>
+            <th>Vacation Days</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3">Bob Bobsky</td>
+                <td>April</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>May</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>June</td>
+                <td>10</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Bob Bobsky</td>
+                <td>Vacation 2023</td>
+                <td>17</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <br><br>
+    <!-- Column span -->
+    <table border="2" style="background-color:antiquewhite;">
+        <caption>School Schedule</caption>
+        <thead >
+            <th>Week day/Class</th>
+            <th>8am</th>
+            <th>9am</th>
+            <th>10am</th>
+            <th>11am</th>
+            <th>12am</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="background-color: aqua;"><b>Monday</b></td>
+                <td colspan="2">Math</td>
+                <td>Biology</td>
+                <td colspan="2">Chemistry</td>
+            </tr>
+            <tr>
+                <td><b>Tuesday</b></td>
+                <td>English</td>
+                <td>Physics</td>
+                <td colspan="3">Gym</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br><br>
+
+    <!-- Row Span -->
+    <table border="2">
+        <caption>Daily Program</caption>
+        <thead>
+            <th>Hours/Program</th>
+            <th>HBO</th>
+            <th>BBC</th>
+            <th>CNN</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td><b>6pm - 7pm</b></td>
+                <td rowspan="2" style="color: blue;">The Lord fo the Rings</td>
+                <td style="color: orange;">Comedy Central</td>
+                <td style="color: red;">NBA</td>
+            </tr>
+            <tr>
+                <td><b>7pm - 8pm</b></td>
+                <td>News</td>
+                <td>Weather</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br><br>
+    <!-- Rowspan and colspan together-->
+    <table border="2">
+        <caption>Colspan and rowspan</caption>
+        <thead>
+            <th>Time</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>8am - 9am</td>
+                <td rowspan="2">Math</td>
+                <td rowspan="2" colspan="2">Science</td>
+            </tr>
+            <tr>
+                <td>9am - 10am</td>
+            </tr>
+        </tbody>
+
+    </table>
+
+    <br><br>
+    <!-- Rowspan and colspan together with images -->
+    <table border="2">
+        <caption>Colspan and rowspan</caption>
+        <thead>
+            <th>Time</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>8am - 9am</td>
+                <td rowspan="2"><img style="height: 60px;" src="../img/math.png" alt="Math"></td>
+                <td rowspan="2" colspan="2"><img src="../img//science.png" alt="Science" style="height: 60px;"></td>
+            </tr>
+            <tr>
+                <td>9am - 10am</td>
+            </tr>
+        </tbody>
+
+    </table>
+    
+</body>
+</html>
