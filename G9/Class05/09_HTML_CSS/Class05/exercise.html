@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 28px;
+            margin: 0;
+        }
+        p {
+            font-size: 18px;
+        }
+        section {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .thumbnail {
+            overflow: hidden;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        .thumbnail img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .thumbnail:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Multimedia Gallery</h1>
+        <p>Explore our collection of images, videos, and audio.</p>
+    </header>
+    <section>
+        <!-- Image Gallery -->
+        <div class="thumbnail">
+            <a href="image1_large.jpg" target="_blank">
+                <img style="height: 100px; width: 100px;" src="https://images.unsplash.com/photo-1481349518771-20055b2a7b24?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cmFuZG9tfGVufDB8fDB8fHww" alt="Image 1">
+            </a>
+        </div>
+        <div class="thumbnail">
+            <a href="image2_large.jpg" target="_blank">
+                <img src="image2_thumbnail.jpg" alt="Image 2">
+            </a>
+        </div>
+        <div class="thumbnail">
+            <a href="image3_large.jpg" target="_blank">
+                <img src="image3_thumbnail.jpg" alt="Image 3">
+            </a>
+        </div>
+
+        <!-- Video Gallery -->
+        <div class="thumbnail">
+            <iframe width="300" height="200" src="https://www.youtube.com/embed/gp8I4oj5CCM?si=7Snb0IXBmFeX8qES" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="thumbnail">
+            <iframe width="300" height="200" src="https://www.youtube.com/embed/VIDEO_ID2" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="thumbnail">
+            <iframe width="300" height="200" src="https://www.youtube.com/embed/VIDEO_ID3" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <!-- Audio Gallery -->
+        <div class="thumbnail">
+            <audio controls>
+                <source src="audio1.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="thumbnail">
+            <audio controls>
+                <source src="audio2.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </section>
+</body>
+</html>

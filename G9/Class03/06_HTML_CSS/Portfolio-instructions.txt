@@ -1,0 +1,44 @@
+Create a New Document:
+
+Open a plain text editor (e.g., Notepad, Visual Studio Code, Sublime Text) or use an HTML code editor.
+Start a new document.
+Document Type Declaration:
+
+Begin with the <!DOCTYPE> declaration.
+Specify the HTML version you intend to use, such as <!DOCTYPE html> for HTML5.
+HTML Root Element:
+
+Add the <html> element to enclose the entire HTML document.
+Head Section:
+
+Inside the <html> element, create the <head> section.
+Include essential metadata and references, such as the document title, character set, and external stylesheets or scripts.
+Title:
+
+Within the <head> section, use the <title> element to define the page's title.
+Body Section:
+
+After the <head> section, open the <body> section.
+This is where you will place the visible content of your web page.
+Header Section:
+
+Inside the <body>, create a <header> section to include the page's header, which may contain a logo, title, and introductory information.
+Main Content Sections:
+
+Organize the main content of your webpage into separate <section> or <div> elements.
+Use these elements to structure and style different parts of your content, such as skills, projects, and contact information.
+Lists, Paragraphs, and Links:
+
+Within each content section, use HTML elements like <ul>, <li>, <p>, and <a> to create lists, paragraphs, and links.
+Text and Headings:
+
+Insert text content and headings using <h1>, <h2>, <h3>, etc., elements.
+Closing Tags:
+
+Make sure to close each HTML element with the corresponding closing tag (e.g., </html>, </head>, </body>).
+Save the HTML File:
+
+Save the file with an .html extension, such as index.html, on your computer.
+View in a Web Browser:
+
+Open the saved HTML file in a web browser to see your webpage.

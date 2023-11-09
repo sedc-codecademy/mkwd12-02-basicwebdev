@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise</title>
+</head>
+<body>
+    <form>
+        <label for="name"> Name </label>
+        <input required placeholder="Please enter your name" type="text" id="name"/>
+        <br/>
+        <label for="pass"> Password </label>
+        <input required placeholder="Enter your password" type="password" id="pass">
+        <br/>
+        <p> Gender </p>
+        <input type="radio" id="m" name="gender">
+        <label for="m"> male </label>
+        <br/>
+        <input type="radio" id="f" name="gender">
+        <label for="f"> female </label>
+        <br/>
+        <label for="cont"> Continent </label>
+        <select>
+            <option> choose a contitent </option>
+            <option> Europe </option>
+            <option> Nort America </option>
+            <option> South America </option>
+        </select>
+        <p> meals </p>
+        <input type="checkbox" id="bf" name="meals">
+        <label for="bf"> breakfast </label>
+        <br/>
+        <input type="checkbox" id="ln" name="meals">
+        <label for="ln"> lunch </label>
+        <br/>
+        <input type="checkbox" id="dn" name="meals">
+        <label for="dn"> dinner </label>
+        <br/>
+        <label for="rm"> Remark </label>
+        <textarea cols="20" rows="4"></textarea>
+        <br/>
+        <input type="submit" value="Send">
+        <input type="reset" value="Cancel">
+    </form>
+    
+</body>
+</html>

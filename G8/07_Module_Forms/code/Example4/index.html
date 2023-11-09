@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+     <head>
+         <title>My first HTML Form</title>
+     </head>
+     <body>
+            <h1>My first FORM</h1>
+            <form action="" method="POST">
+                  <label for="username">Username</label>
+                  <input type="text" name="username" id="username"/>
+            </form>
+          
+            <h2>Sign IN</h2>
+            <p><b>Please insert username and password to login</b></p>
+            <form action="" method="POST">
+                  <label for="uname">Username</label>
+                  <input type="text" name="username" id="uname"/>
+                  <br/>
+                  <br/>
+                  <label for="password">Password</label>
+                  <input type="password" name="password" id="password"/>
+                  <br/>
+                  <br/>
+                  <label for="comment">Add a comment</label>
+                  <textarea name="comment" id="comment" rows="5">
+                      Enter your comment...
+                  </textarea>
+            </form>
+
+            <hr/>
+            <!--Radio Buttons-->
+            <form action="" method="POST">
+                <p>Please choose your favourite music genre:</p>
+                <input type="radio" name="genre" value="rock" id="rock" checked="checked"/>
+                <label for="rock">Rock</label>
+                <input type="radio" name="genre" value="pop" id="pop"/>
+                <label for="pop">Pop</label>
+                <input type="radio" name="genre" value="jazz" id="jazz"/>
+                <label for="jazz">Jazz</label>
+            </form>
+
+            <hr/>
+
+            <!--Drop down list-->
+            <form action="" method="POST">
+                <label for="musicapp">What is your favourite music application</label>
+                <select name="musicapp" id="musicapp">
+                    <option value="spotify">Spotify</option>
+                    <option value="deezer">Deezer</option>
+                    <option value="applemusic">Apple Music</option>
+                </select>
+            </form>
+
+            <hr/>
+            <!--Check box-->
+            <form action="" method="POST">
+                <p>Please choose your favourite music application</p>
+                <input type="checkbox" name="app" value="itunes" id="itunes" checked/>
+                <label for="itunes">iTunes</label>
+                <input type="checkbox" name="app" value="deezer" id="deezer"/>
+                <label for="deezer">Deezer</label>
+                <input type="checkbox" name="app" value="spotify" id="spotify"/>
+                <label for="spotify">Spotify</label>
+            </form>
+
+            <hr/>
+            <!--Multiple select box-->
+            <form action="" method="POST">
+                <label for="">Do you play any of the following insturments</label>
+                <select name="instruments" id="instruments" multiple="multiple" size="5">
+                    <option value="guitar">Guitar</option>
+                    <option value="drums">Drums</option>
+                    <option value="piano">Piano</option>
+                    <option value="bass">Bass</option>
+                    <option value="tube">Tube</option>
+                </select>
+            </form>
+
+            <hr/>
+            <!--File Input-->
+            <form action="" method="POST">
+                 <input type="file" name="personalcv" id="personalcv"/>
+                 <label for="personalcv">Upload your CV</label>
+            </form>
+
+           <hr/>
+           <!--Submit button-->
+           <form action="" method="POST">
+               <label for="email">Subscribe to our mailing list</label>
+               <input type="text" name="email" id="email"/> 
+               <input type="submit" value="Subscribe"/>
+           </form>
+
+           <hr/>
+           <!--Button-->
+           <form action="" method="POST">
+               <button type="button">Click me</button>
+           </form>
+           <hr/>
+           <!--Button with image-->
+           <form action="" method="POST">
+                <button>
+                    <img src="img/44516307-cross-button-add-icon.jpg" width="20" height="20"/>Add
+                </button>
+           </form>
+           <hr/>
+           <!--Grouping-->
+           <form action="" method="POST">
+           <fieldset style="background-color: cornsilk">
+                <legend><b>Contact details</b></legend>
+                <label for="firstlastname">First Name and Last Name</label>
+                <input type="text" name="firstlastname" id="firstlastname" required/>
+                <br/>
+                <br/>
+                <label for="mailaddress">Email address</label>
+                <input type="email" name="mailaddress" id="mailaddress"/>
+                <br/>
+                <br/>
+                <label for="mobilephone">Mobile Phone</label>
+                <input type="text" name="mobilephone" id="mobilephone" placeholder="07*/______" pattern="[0-9]"/>
+                <br/>
+                <br/>
+                <label for="birthday">Birthday</label>
+                <input type="date" id="birthday" name="birthday"/>
+                <br/>
+                <br/>
+                <input type="submit" value="Subscribe"/>
+           </fieldset>    
+           </form>
+
+
+
+
+           
+
+
+     </body>
+
+
+</html>
