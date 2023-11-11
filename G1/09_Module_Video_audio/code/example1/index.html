@@ -1,11 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="videos, audios, songs, music" />
+    <meta name="author" content="Ivo Kostovski" />
+    <meta name="description" content="Website about videos and audios" />
+    <meta name="robots" content="index, follow" />
     <title>Audio & Video example</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <h1>Video</h1>
+    <video
+      src="./videos/video.mp4"
+      type="video/mp4"
+      controls
+      preload="metadata"
+      poster="./images/poster.png"
+      loop
+      height="400"
+      width="400"
+      autoplay
+      muted
+    >
+      <p>Ova e video</p>
+    </video>
+
+    <h1>Audio</h1>
+    <audio
+        src="./audios/audio.mp3"
+        type="audio/mp3"
+        controls
+        preload="metadata"
+        loop
+        autoplay
+        muted
+    >
+    </audio>
+
+    <h1>Iframe</h1>
+
+    <iframe
+        src="https://rezultati.com"
+        width="800"
+        height="800"
+        allowfullscreen
+        title="Rezultati"
+        frameborder="1"
+        loading="lazy"
+    ></iframe>
+  </body>
 </html>
