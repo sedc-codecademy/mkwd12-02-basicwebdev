@@ -1,0 +1,21 @@
+* {
+   border: 1px solid black; 
+}
+
+p {
+    color: gray;
+}
+
+h2 {
+    font-size: 30px;
+    color: brown !important;
+}
+
+.paragraph-justify {
+    text-align: justify;
+}
+
+#css-rules {
+    text-decoration: underline;
+}
+

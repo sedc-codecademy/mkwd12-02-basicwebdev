@@ -1,0 +1,47 @@
+/* Universal selector selects all elements in the page */
+* {
+  /* color: pink; */
+}
+
+/* Type selector examples */
+
+p {
+  color: darkblue;
+  font-size: 18px;
+}
+
+section {
+  background-color: lightgray;
+}
+
+ul {
+  background-color: lightyellow;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+/* Class selector examples */
+
+.pink-bg {
+  background-color: lightpink;
+}
+
+.blue-bg {
+  background-color: lightblue;
+}
+
+p.pink-bg {
+  background-color: hotpink;
+}
+
+.golden-text {
+  color: darkgoldenrod;
+}
+
+/* Id selector example */
+
+#section-heading {
+  background-color: lightgreen;
+}

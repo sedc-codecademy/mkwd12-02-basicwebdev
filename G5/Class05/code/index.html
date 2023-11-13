@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+<body>
+    <h1>HTML Forms</h1>
+    <hr>
+    <form action="" method="POST">
+        <fieldset>
+            <legend>Text input</legend>
+            <h5>-------- Text input -------</h5>
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username" value=""  placeholder="Enter username" required />
+
+        <h5>-------- Password input -------</h5>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" placeholder="Enter password" required>
+
+        <h5>-------- Text area -------</h5>
+        <label for="description">Description:</label>
+        <textarea name="description" id="description" cols="15" rows="5" placeholder="Enter a description"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>MAKING CHOICES</legend>
+            <h5>-------- Radio button -------</h5>
+            <p>Please select your favorite music genre:</p>
+    
+            <input type="radio" name="music-genre" id="rock" value="Rock">
+            <label for="rock">Rock</label>
+    
+            <input type="radio" name="music-genre" id="pop" value="Pop">
+            <label for="pop">Pop</label>
+    
+            <input type="radio" name="music-genre" id="jazz" value="Jazz">
+            <label for="jazz">Jazz</label>
+            <br>
+    
+            <h5>-------- Checkbox -------</h5>
+            <p>Please select your favorite music streaming services:</p>
+    
+            <input type="checkbox" name="service" id="appleMusic" value="AppleMusic">
+            <label for="appleMusic">Apple Music</label>
+    
+            <input type="checkbox" name="service" id="googleMusic" value="GoogleMusic">
+            <label for="googleMusic">Google Music</label>
+    
+            <h5>-------- Dropdown / Select -------</h5>
+            <label for="devices">What device do you listen to music on?</label>
+            <select name="devices" id="devices" required>
+                <option value="" selected disabled>Please select</option>
+                <option value="Guitar">Guitar</option>
+                <option value="Drums">Drums</option>
+                <option value="Bass">Bass</option>
+            </select>
+    
+            <h5>-------- Multiple Dropdown / Multiple Select -------</h5>
+    
+            <label for="instruments">Do you play any of these instruments?</label>
+            <select name="instruments" id="instruments" multiple size="4">
+                <option value="Guitar">Guitar</option>
+                <option value="Bass" selected>Bass</option>
+                <option value="Drums">Drums</option>
+                <option value="Keyboard">Keyboard</option>
+            </select>
+        </fieldset>
+
+        <h5>-------- File input -------</h5>
+
+        <label for="song">Upload your song:</label>
+        <input type="file" name="song" id="song">
+
+        <h5>-------- Submit and Reset input -------</h5>
+
+        <!-- <input type="button" value="Submit"> -->
+        <input type="submit" value="Subscribe" />
+        <input type="reset" value="Reset Form" />
+
+        <h5>-------- Submit and Reset button -------</h5>
+        <button type="submit">Send</button>
+        <button type="reset">Reset</button>
+    </form>
+    <hr>
+    <form action="#" method="post">
+        <h3>HTML5 SPECIFIC ELEMENTS</h3>
+        <fieldset>
+            <legend>HTML5 specific elements</legend>
+            <h5>---- Email ----</h5>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required placeholder="Enter your email">
+
+            <h5>---- URL ----</h5>
+            <label for="website">Your website:</label>
+            <input type="url" name="website" id="website" required placeholder="Enter your url"/>
+
+            <h5>---- Phone ----</h5>
+            <label for="phoneNumber">Enter your phone number:</label>
+            <input type="tel" name="phoneNumber" id="phoneNumber" required placeholder="Enter your phone number">
+
+            <h5>-------- Number input -------</h5>
+            <label for="price">Price:</label>
+            <input type="number" name="price" id="price" placeholder="Enter number" min="5" max="1000" required>
+
+            <h5>-------- Date -------</h5>
+            <label for="birthday">Birthday:</label>
+            <input type="date" name="birthday" id="birthday" required>
+
+            <h5>-------- Time -------</h5>
+            <label for="time">Time:</label>
+            <input type="time" name="time" id="time">
+
+            <h5>-------- Date Time -------</h5>
+            <label for="dateTime">Date time:</label>
+            <input type="datetime-local" name="dateTime" id="dateTime">
+
+            <h5>-------- Search -------</h5>
+            <label for="search">Search for anything:</label>
+            <input type="search" id="search" name="search" placeholder="Search for anything">
+
+            <h5>-------- Color -------</h5>
+            <label for="color">Color:</label>
+            <input type="color" name="color" id="color">
+
+            <h5>-------- Range -------</h5>
+            <label for="range">Volume:</label>
+            <input type="range" name="range" id="range" min="0" max="10">
+
+<br><br>
+            <button type="submit">Send</button>
+            <button type="reset">Reset Form</button>
+        </fieldset>
+
+    </form>
+</body>
+</html>
