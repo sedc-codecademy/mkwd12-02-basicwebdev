@@ -33,13 +33,32 @@ li, h4 {
 p {
     font-size: 14px;
     font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    text-align: justify;
 }
 
 h1 {
     font-style: italic;
     text-transform: uppercase;
+    text-align: center;
+    text-shadow: 3px 3px 5px rgba(0,0,0, 0.5);
 }
 
 h4 {
     font-style: oblique 10deg;
+}
+
+img {
+    vertical-align: baseline;
+}
+
+p::first-letter {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+p::first-line {
+    font-style: italic;
 }
