@@ -1,0 +1,54 @@
+ /* ALL SELECTION, it will SELECT ALL ELEMENTS  */
+* {
+  font-family: Arial;
+}
+
+/* Tag Selector, it selects ALL h3 elements   */
+h3 {
+  color: blue;
+}
+
+h4 {
+  font-size: 20px;
+  color: red;
+}
+
+ /* Class selector  */
+/* !imporant won't let this declaration to be overwritten
+but is BAD pratice */
+.fantasyMovie {
+  color:chartreuse !important;
+  font-style: italic;
+}
+
+.actionMovie {
+  color: cadetblue;
+  font-style: oblique;
+  font-weight: bolder;
+}
+
+ /* ID Selector  */
+#fantasyList {
+  background-color: darkgrey;
+}
+
+#actionsList {
+  background-color: darkgoldenrod;
+}
+
+/* Id selector is stronger that tag selection
+and it overwrote the color declaration of tag h4 selection */
+#costumHeadingStyle {
+  color: steelblue;
+}
+
+#harryPotterMovie{
+  font-size: 30px;
+  /* this declaration font-style will overwrite the one
+  from the class fantasyMovie, since id selection is STRONGER */
+  font-style: normal;
+  /* Color wont overwrite the color of the class
+  since the class has !important FLAG */
+  color: violet;
+
+}
