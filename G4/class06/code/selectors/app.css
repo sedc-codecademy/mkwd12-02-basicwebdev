@@ -1,0 +1,72 @@
+/* * {
+  color: hotpink;
+} */
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  background-color: lightgreen;
+}
+
+h2 {
+  color: darkblue;
+}
+
+.content-container {
+  background-color: lightblue;
+}
+
+.red-text {
+  color: darkred;
+}
+
+.child-selector-container > p {
+  background-color: cornflowerblue;
+}
+
+.desecendant-selector-container p {
+  background-color: cornflowerblue;
+}
+
+h2 + ul {
+  background-color: black;
+  color: white;
+}
+
+h2 ~ ol {
+  background-color: black;
+  color: white;
+}
+
+/* Cascading rules */
+
+#main-paragraph {
+  background-color: black;
+  color: white;
+}
+
+.paragraph {
+  background-color: hotpink;
+}
+
+section p {
+  background-color: blue;
+}
+
+p {
+  background-color: lightcoral;
+}
+
+p {
+  background-color: aquamarine;
+}
+
+/* Using .class-name after a tag selector selects all elements that have that class */
+p.paragraph {
+  font-size: 30px;
+  color: lightyellow !important;
+  padding: 20px;
+  border-radius: 4px;
+}

@@ -1,0 +1,36 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+section {
+  background-color: lightgray;
+}
+
+strong {
+  background-color: lightpink;
+}
+
+section > p {
+  color: darkblue;
+}
+
+section ol,
+section ul {
+  color: darkred;
+}
+
+.documentation-container {
+  background-color: gold;
+}
+
+.documentation p {
+  background-color: lightyellow;
+}
+
+#documentation-heading {
+  color: darkblue;
+}
+
+h3 + ul {
+  background-color: lightblue;
+}
