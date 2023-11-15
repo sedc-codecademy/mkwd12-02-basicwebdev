@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-weight: 900;
+}
+
+h2 {
+    font-weight: 700;
+    font-style: italic;
+}
+
+.regular-text {
+    font-weight: 400;
+}
+
+.light-text {
+    font-weight: 300;
+}
+
+/* Link has not been visited yet */
+a:link {
+    text-decoration: none;
+    color: blue;
+}
+
+/* Link is actively clicked */
+a:active {
+    text-shadow: 3px 3px 3px black;
+    color: blue
+}
+
+/* Link has been visited */
+a:visited {
+    color: darkblue;
+}
+
+/* We are hovering above the link with the mouse pointer */
+a:hover {
+    color: rgb(100, 100, 246);
+    cursor: pointer;
+}
+
+/* We are focusing on the link element (using TAB) */
+a:focus {
+    text-decoration: underline;
+    color: darkgreen;
+}

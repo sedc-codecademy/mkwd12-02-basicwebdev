@@ -1,0 +1,18 @@
+.color-name {
+    background-color: deeppink;
+    color: chartreuse;
+}
+
+.hex-code {
+    background-color: #c70c02;
+    color: #0230c7;
+}
+
+.rgb-code {
+    background-color: rgba(1, 119, 133, 0.8);
+    color: rgb(95, 1, 133);
+}
+
+.hsl-code {
+    background-color: hsla(125, 99%, 26%, 0.7);
+}

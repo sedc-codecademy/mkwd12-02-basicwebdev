@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Intro to css</title>
+  
+  <!-- Embeded Styling -->
+
+  <!-- p is selection, tells which element is selected -->
+  <!-- color is declartion, telling us, which styling is going to be 
+  applied on the element -->
+  <style>
+    
+    p {
+      color: burlywood;
+    }
+
+    div {
+      border: 10px solid red;
+    }
+  </style>
+
+  <!-- EXTERNAL CSS -->
+  <link rel="stylesheet" type="text/css" href="./styles.css"/>
+</head>
+<body>
+
+  <!-- First approach - INLINE STYLING - -->
+  <h1 style="color:mediumvioletred; font-size: 45px">Intro to CSS</h1>
+
+  <article style="background-color: yellow">
+    <h2>Welcoming message...</h2>
+    <p style="color: magenta; font-size: 15px">Lorem ipsum dolor sit amet consectetur, 
+      adipisicing elit. Ipsa blanditiis in, cupiditate, 
+      obcaecati excepturi est ut facilis odio reprehenderit quis unde asperiores, 
+      minus modi! Eos doloremque repudiandae voluptate fugit? Beatae.</p>
+  </article>
+
+  <hr />
+  <!-- Embeded CSS Example -->
+  <div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, 
+      adipisicing elit. Ipsa blanditiis in, cupiditate.
+    </p>
+
+    <p>Hello world</p>
+    <p>I am paragraph too, the tag selection styling is going to be applied on me as-wel</p>
+  </div>
+
+  <hr />
+  <!-- EXTERNAL CSS -->
+
+  <article>
+    <h3>Movies list</h3>
+    <ol>
+      <li>
+        Fantasy
+        <ol id="fantasyList">
+          <li class="fantasyMovie" id="harryPotterMovie">Harry Potter</li>
+          <li class="fantasyMovie">Lord of the rings</li>
+          <li class="fantasyMovie">Star Wars</li>
+        </ol>
+      </li>
+
+      <li>Actions
+        <ol id="actionsList">
+          <li class="actionMovie">John Wick</li>
+          <li class="actionMovie">The Last Samurai</li>
+          <li class="actionMovie">1911</li>
+        </ol>
+      </li>
+     
+    </ol>
+  </article>
+
+  <section>
+    <h4>Football news about...</h4>
+    <h4 id="costumHeadingStyle">Football match this weekend...</h4>
+    <h4>Movie night during the weekend...</h4>
+  </section>
+</body>
+</html>

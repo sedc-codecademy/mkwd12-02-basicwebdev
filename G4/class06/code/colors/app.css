@@ -1,0 +1,22 @@
+body {
+  font-family: sans-serif;
+  background-color: lightgray;
+  color: #000000;
+}
+
+h1 {
+  background-color: rgb(47, 47, 158);
+}
+
+h2 {
+  background-color: #ff0000;
+}
+
+p {
+  color: #ffb703;
+  background-color: rgba(138, 0, 0, 0.6);
+}
+
+h3 {
+  opacity: 0.3;
+}
