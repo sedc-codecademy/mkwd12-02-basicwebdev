@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url("./assets/Roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'KdamThmor';
+    src: url("./assets/Kdam_Thmor_Pro/KdamThmorPro-Regular.ttf");
+}
+
+* {
+    background-color: black;
+    color: blanchedalmond;
+}
+
+p::first-letter{
+    font-size: 300%;
+}
+p::first-line{
+    color: green;
+}
+
+.roboto-font {
+    font-family: 'Roboto-Regular', sans-serif;
+}
+
+.nekoj-div {
+    width: 80vw;
+    min-width: 300px;
+    background-color: fuchsia
+}
+
+.lowercase {
+    text-transform: lowercase;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.oblique {
+    font-style: oblique;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.shoznam-font {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.high-lines {
+    line-height: 1.5;
+}
+
+.wide-letters {
+    letter-spacing: -1px;
+}
+
+.igrame-so-centriranje {
+    text-align: right;
+    text-shadow: 2px 2px 4px rgb(255, 0, 0);
+}
+
+.change-text-decoration {
+    text-decoration: wavy lime underline
+}
+
+/* colors with names */
+#headline {
+    color: cyan;
+    font-family: 'Roboto-Regular', sans-serif;
+    background-color: chartreuse;
+}
+
+.kdam-thmor-font {
+    font-family: 'KdamThmor', sans-serif;
+}
+
+
+/* color with RGB values */
+#subHeadline1 {
+    color: rgb(1, 255, 0);
+    background-color: rgb(255, 1, 0);
+}
+
+/* color with HEX */
+#subHeadline2 {
+    color: #aa00ff;
+    background-color: #ffffaa;
+}
+
+/* rgba color test */
+#rgbaTest {
+    color: rgba(255, 235, 136, 0.5);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* hex test with alpha */
+#hexTest {
+    color: #0000ff80;
+    background-color: #afafafaf;
+}
+
+/* hsl and hsla test */
+#hslaTest {
+    color: hsl(60, 100%, 50%);
+    background-color: hsla(180, 50%, 80%, 25%);
+}

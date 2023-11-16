@@ -1,0 +1,61 @@
+@font-face {
+    font-family: Kanit;
+    font-weight: normal;
+    font-style: normal;
+    src: url("../imported_fonts/Kanit-ExtraBoldItalic.ttf");
+}
+
+#first-h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#second-h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#first-h2 {
+    font-family: Roboto;
+}
+
+#second-h2{
+    font-family: 'Vina Sans';
+}
+
+#third-h2 {
+    font-family: Kanit;
+}
+
+.small-size-font {
+    font-size: x-small;
+}
+
+.paragraph-2 {
+    text-align: right;
+}
+
+.paragraph-2::first-letter {
+    font-weight: 900;
+    font-size: 2em;
+}
+
+.paragraph-3 {
+    word-spacing: 12px;
+    letter-spacing: 3px;
+    line-height: 50px;
+}
+
+h3 {
+    text-transform: uppercase;
+    text-decoration: underline overline line-through;
+    text-decoration-color: blue;
+    text-decoration-thickness: 5px;
+}
+
+.cat-image-text {
+    vertical-align: top;
+    text-shadow: 5px 5px 4px black;
+}
+
+.cat-image {
+    vertical-align: bottom;
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <form action="" method="post">
+        <!-- Text obicen -->
+        <div>
+            <label for="imeIPrezime">Име и презиме</label>
+            <br>
+            <input type="text" name="imeIPrezime" id="imeIPrezime">
+        </div>
+        <br>
+        <!-- Text lozinka tip koj sto gi pokriva bukvite -->
+        <div>
+            <label for="lozinka">Лозинка</label>
+            <br>
+            <input type="password" name="lozinka" id="lozinka">
+        </div>
+        <br>
+        <!-- Textarea e kade sto treba da napiseme poveke text -->
+        <div>
+            <label for="komentar">Зошто ни се приклучувате?</label>
+            <br>
+            <textarea name="komentar" id="komentar" cols="30" rows="10" placeholder="Na primer: lorem ipsum"></textarea>
+        </div>
+
+        <br>
+        <!-- radio select kopcinja kade sto ednoto moze da bide selektirano odednas -->
+        <div>
+            <fieldset>
+                <legend>Одберете една од причините зошто ни се приклучувате</legend>
+                <div>
+                    <input type="radio" name="interes" value="interes1" id="interes1">
+                    <label for="interes1">Заради Љубопитност</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="interes" value="interes2" id="interes2">
+                    <label for="interes2">Пријател ми препорача</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="interes" value="interes3" id="interes3">
+                    <label for="interes3">Добив бесплатно</label>
+                </div>
+            </fieldset>
+
+        </div>
+
+        <br>
+        <!-- Checkbox so stikliranje -->
+
+        <div id="checkboxovi">
+            <fieldset>
+                <legend>Одберете што сакате како дополнителна услуга:</legend>
+                <div>
+                    <input type="checkbox" name="checkboxInputi" id="sakam1" value="sakam1">
+                    <label for="sakam1">Дополнително сакам и месечна залиха на протеин</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="checkboxInputi" id="sakam2" value="sakam2">
+                    <label for="sakam2">Дополнително сакам екстра залиха на стероиди</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="checkboxInputi" id="sakam3" value="sakam3">
+                    <label for="sakam3">Сакам дополнително и персонален тренер</label>
+                </div>
+            </fieldset>
+        </div>
+
+        <br>
+        <!-- Drop down meni -->
+        <div>
+            <label for="nacinNaPlakjanje">Начин на плаќање</label>
+            <select name="nacinNaPlakjanje" id="nacinNaPlakjanje" required>
+                <option selected disabled>Одберете начин на плаќање</option>
+                <option value="kesh">Во Готово</option>
+                <option value="elektronski">Електронски</option>
+            </select>
+        </div>
+
+        <br>
+        <!-- So poveke drop down opcii -->
+        <div>
+            <label for="alergii">Дали сте алергични на некои од наредните состојки?</label>
+            <br>
+            <select name="alergii" id="alergii" size="3" multiple="multiple">
+                <option selected></option>
+                <option value="jajca">Јајца</option>
+                <option value="mleko">Млеко</option>
+                <option value="gluten">Глутен</option>
+            </select>
+        </div>
+
+        <br>
+        <!-- Uploadiranje na file -->
+        <div>
+            <label for="slikaZaBefore">Прикачете слика од вас</label>
+            <input type="file" name="slikaZaBefore" id="slikaZaBefore">
+        </div>
+
+
+        <!--  -->
+        <div>
+            <label for="email">Напишете ја вашата електронска адреса за контакт</label>
+            <input type="email" name="email" id="email" placeholder="пр. jamandilovski@gmail.com">
+        </div>
+
+        <div>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+
+        <div>
+            <button id="kopce" disabled><img src="./assets/slikicka.png" width="12" alt=""> Копче</button>
+        </div>
+        <br>
+        <br>
+        <br>
+
+    </form>
+
+</body>
+
+</html>
