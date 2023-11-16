@@ -1,0 +1,65 @@
+@font-face {
+    font-family: "MyAgbalumo"; 
+    src: url("../imported_fonts/Agbalumo-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Edu TAS Beginner"; 
+    src: url("../imported_fonts/EduTASBeginner-VariableFont_wght.ttf");
+}
+
+#first-h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#second-h1 {
+    font-family: MyAgbalumo;
+}
+
+#first-h2 {
+    font-family: Edu TAS Beginner;
+}
+
+.small-size-font {
+    font-size: smaller;
+}
+
+.paragraph-2 {
+    text-align: right;
+    font-size: 2em;
+    word-spacing: 10px;
+    letter-spacing: 4px;
+}
+
+.paragraph-4::first-line {
+    color: brown;
+}
+
+.paragraph-4::first-letter {
+    color: green;
+    font-size: xx-large;
+}
+
+#decorated-text {
+    text-transform: uppercase;
+
+    /* text-decoration-style: dotted;
+    text-decoration-line: underline;
+    text-decoration-color: red;
+    text-decoration-thickness: 4px; */
+
+    text-decoration: underline dotted red 4px;
+}
+
+.last-paragraph {
+    line-height: 80px;
+}
+
+
+.dog-image-text {
+    vertical-align: top;
+}
+
+.dog-image {
+    vertical-align: top;
+}

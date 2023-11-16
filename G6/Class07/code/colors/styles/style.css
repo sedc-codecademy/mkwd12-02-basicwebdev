@@ -1,0 +1,37 @@
+h1 {
+    color: blueviolet;
+    background-color: antiquewhite;
+}
+
+span {
+    background-color: aquamarine;
+}
+
+.color-name {
+    background-color: cadetblue;
+}
+
+.color-name::first-line {
+    font-size: xx-large;
+}
+
+.hex-code {
+    background-color: #d92b18;
+    color: #f2eeed;
+}
+
+.hex-code:hover {
+    background-color: blue;
+    color: #f2eeed;
+}
+
+.rgb-color {
+    background-color: rgba(173, 230, 50, 0.7);
+    color: rgb(16, 19, 227);
+    font-family: 'Segoe UI', 'Times New Roman', Geneva, Verdana, sans-serif;
+}
+
+.hsl-color {
+    background-color: hsla(310, 92%, 37%, 0.4);
+    color: hsl(57, 92%, 37%);
+}
