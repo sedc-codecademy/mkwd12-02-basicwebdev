@@ -1,0 +1,113 @@
+/* p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2, p {
+    color: green;
+}
+
+#paragraph1 {
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: chartreuse;
+}
+
+#paragraph2 {
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    color: red;
+}
+
+.blue-background {
+    background-color: blue;
+} */
+
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+}
+i {
+    color: green;
+}
+i {
+    color: red;
+}
+b {
+    color: pink;
+}
+p b {
+    color: blue !important;
+
+}
+p b {
+    color: violet;
+}
+p#intro {
+    font-size: 100%;
+}
+p {
+    font-size: 75%;
+}
+
+body {
+    /* font-family: Arial, Helvetica, sans-serif; */
+    color : #665544;
+    padding: 10px;
+}
+
+.page {
+    border: 1px solid #dd8125;
+    background-color: #efefef;
+    padding: inherit;
+    opacity: 1;
+}
+h1, h2 {
+	font-family: 'Narnoor', sans-serif !important;
+
+    /* text-decoration-style values */
+
+/* Keyword values */
+/* text-decoration-style: solid; */
+/* text-decoration-style: double; */
+/* text-decoration-style: dotted; */
+/* text-decoration-style: dashed; */
+}
+
+a {
+    font-size: 30px;
+}
+/* a:link {
+	color: deeppink;
+	text-decoration: none;
+}
+a:visited {
+	color: yellow;
+} */
+
+a {
+	text-decoration: none;
+}
+
+a:link {
+	color: #265301;
+}
+
+a:visited {
+	color: #437A16;
+}
+
+a:focus {
+	background-color: #dd8125;
+}
+
+a:hover {
+    background-color: red;
+    padding: 10px;
+    transition: ease-in-out;
+}
+
+
