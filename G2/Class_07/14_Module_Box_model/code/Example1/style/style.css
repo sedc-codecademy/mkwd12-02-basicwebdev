@@ -1,0 +1,187 @@
+/* font-face using relative URL */
+@font-face{
+    font-family: "Open Sans";
+    font-weight: normal;
+    font-style: normal;
+    src: url("../fonts/OpenSans-Regular.ttf") format("ttf");
+}
+
+/* Using Google Fonts - using import rule with absolute URL */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap');
+
+
+/* universal selector */
+*{
+    font-family: "Open Sans", Helvetica, sans-serif;
+}
+
+body{
+    font-size: 20px;
+}
+
+/* type selector */
+main{
+    background-color: antiquewhite;
+}
+
+section{
+    font-size: 20px;
+}
+
+p{
+    font-size: 2em;
+    font-weight: 300;
+    font-style: italic;
+}
+
+/* class selector */
+.yellow-background{
+   background-color: yellow; 
+}
+
+.blue-text{
+    color: hsla(229, 77%, 46%, 0.8);
+}
+
+span{
+    color: rgba(201, 45, 24, 0.5) !important;
+    text-transform: uppercase;
+
+    text-decoration-style: dotted;
+    text-decoration-line: underline overline;
+    text-decoration-color: blueviolet;
+    text-decoration-thickness: 3px;
+
+    text-decoration: dotted underline overline blueviolet 3px;
+}
+
+/* ID selector */
+#links{
+    font-size: large;
+}
+
+/* child selector */
+section > p{
+    background-color: darkcyan;
+    line-height: 3;
+    letter-spacing: 10px;
+    word-spacing: 30px;
+    text-align: start;
+}
+
+/* descendant selector */
+main li{
+    color: violet;
+}
+
+/* adjacent sibling selector */
+h1 + span{
+    font-size: 18px;
+}
+
+/* general sibling slector */
+h1 ~ ul{
+    background-color: yellowgreen;
+}
+
+
+footer span{
+   vertical-align: -40px; 
+}
+
+
+/* text-shadow */
+h1{
+    text-shadow: 5px 5px 20px darkslategray, 
+                 0px 10px 5px lightcoral;
+}
+
+
+
+/* stylizing CSS hyperlinks */
+
+/* :link - before links are visited */
+a:link{
+    color: blue;
+    background-color: lightpink;
+    text-decoration: none;
+}
+
+/* :visited - after links are visited */
+a:visited{
+    color: red;
+}
+
+
+/* :hover - when user is over the element with the mouse pointer */
+a:hover{
+    background-color: lightsalmon;
+    text-decoration: underline;
+}
+
+/* :focus - when user navigates a website using the tab button on a keyboard */
+a:focus{
+    background-color: lightyellow;
+    outline: 4px dashed blue;
+    outline-offset: 4px;
+}
+
+/* :active - when user clicks on an element with the mouse */
+a:active{
+    color: darkred;
+}
+
+
+
+/* CSS Box Model */
+
+/* margin */
+nav{
+
+    /* box model - standard or alternative */
+    box-sizing: border-box;
+    
+    background-color: darkslategray;
+
+    margin-top: 25px;
+    margin-right: 20px;
+    margin-bottom: 25px;
+    margin-left: 20px;
+
+    /* shorthand CSS margin property */
+    margin: 25px 20px 25px 20px;
+    margin: 25px 20px 25px;
+    margin: 25px 20px;
+    margin: 25px;
+
+    /* shorthand padding CSS property */
+    padding: 1em 2em;
+
+    /* border */
+    border-width: 6px;
+    border-style: solid;
+    border-color: darkcyan;
+
+    /* shorthand border CSS property */
+    border: 6px solid darkcyan;
+
+    width: 500px;
+    height: 350px;
+
+}
+
+h1{
+    display: inline-block;
+    background-color: darkgoldenrod;
+
+    width: 500px;
+    height: 100px;
+}
+
+/* overflow */
+section > p{
+    width: 800px;
+    height: 250px;
+
+    overflow: auto;
+}

@@ -1,0 +1,160 @@
+/*  */
+@import url('https://fonts.googleapis.com/css2?family=Comforter&family=Open+Sans:wght@400;700&family=Redacted+Script&family=Source+Sans+Pro:ital,wght@1,300&display=swap');
+
+p {
+    font-family: 'Comforter', cursive;
+}
+
+p.second-paragraph {
+    font-family: 'Redacted Script', cursive;
+}
+
+/* Link and visited pseudo classes */
+a.google:link {
+    text-decoration: none;
+    color: black;
+}
+
+a.google:visited {
+    color: brown;
+}
+
+.search-button {
+    background-color: grey;
+    color: white;
+}
+
+.search-button:hover {
+    background-color: rgb(34, 34, 34);
+}
+
+.search-button:active {
+    background-color: darkslateblue;
+}
+
+.search-button:focus {
+    background-color: deeppink;
+}
+
+.search-input:focus {
+    border-color: red;
+    border-width: 10px;
+}
+
+.block-level-div > p {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(206, 201, 201);
+    display: inline-block;
+    width: 45%;
+}
+
+.navigation-menu {
+    list-style-type: none;
+}
+
+.navigation-menu > li {
+    display: inline-block;
+}
+
+.navigation-menu > li > a {
+    text-decoration: none;
+}
+
+.standard-box-model {
+    width: 300px;
+    height: 150px;
+    padding: 10px;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+.alternative-box-model {
+    box-sizing: border-box;
+    width: 300px;
+    height: 150px;
+    padding: 10px;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+.margin-property {
+    border: 1px solid black;
+    margin-top: 20px;
+    margin-right: 15px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+
+    /* Shorthand for margin */
+    /* top right bottom left */
+    margin: 20px 15px 30px 10px;
+
+    /* top right&left bottom */
+    margin: 20px 15px 30px;
+
+    /* top&bottom left&right */
+    margin: 40px 20px;
+
+    /* top&right&bottom&left */
+    margin: 20px;
+}
+
+.padding-property {
+    border: 1px solid black;
+    padding-top: 20px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+
+    /* Shorthand for padding */
+    /* top right bottom left */
+    padding: 20px 15px 10px 5px;
+
+    /*top right&left bottom */
+    padding: 20px 15px 30px;
+
+    /* top&bottom left&right */
+    padding: 20px 15px;
+
+    /* top&right&bottom&left */
+    padding: 20px;
+}
+
+.border-property {
+    margin: 10px;
+    border-top-width: 5px;
+    border-right-width: 1px;
+    border-bottom-width: 2px;
+    border-left-width: 10px;
+
+    /* shorthand for border width */
+    border-width: 1px 2px 1px 2px;
+
+    border-width: 5px;
+
+    border-style: dotted;
+    border-color: yellow red blue green;
+}
+
+.border-property > span {
+    background-color: black;
+    color: white;
+    width: 100px;
+    height: 50px;
+    display: inline-block;
+}
+
+.overflow-property {
+    border: 2px solid black;
+    margin-bottom: 50px;
+    width: 300px;
+    height: 150px;
+
+    overflow: auto;
+}
+
+.center-element {
+    width: 300px;
+    height: 150px;
+    border: 1px solid black;
+    margin: 0 auto;
+}
