@@ -1,0 +1,88 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+@font-face {
+    font-family: "Vina Sans";
+    src: url("../fonts/VinaSans-Regular.ttf");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap');
+
+#header{
+    background-color:aqua;
+    text-align:center;
+}
+
+h2{
+    font-family: 'Vina Sans', sans-serif;
+    color: lightgreen;
+    text-shadow: 2px 2px red;
+}
+
+h3{
+    font-family: 'Comforter Brush', cursive;
+    color:darkcyan
+}
+
+footer{
+    font-size: 20px;
+    font-weight: 900;
+    background-color: chocolate;
+    text-shadow: 2px 2px red;
+}
+
+.first-paragraph{
+    color: rgb(42, 41, 130);
+    background-color: beige;
+    font-size: x-large;
+    font-weight: 200;
+    font-style: italic;
+    text-decoration: dashed line-through red;
+}
+
+p::first-letter{
+    font-size:200%;
+}
+
+li>a{
+    text-decoration: none;
+    color: rgb(198, 50, 50);
+    font-size: smaller;
+}
+
+h3+p{
+    background-color:lightcoral
+}
+
+.subheading-second-paragraph{
+    font-family: 'Comforter', cursive;
+    background-color:lightgreen
+}
+
+.font-family{
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.second-paragraph{
+    font-weight: bold;
+    font-style: oblique 10deg;
+    text-decoration: dotted underline red;
+    letter-spacing: 13px;
+    word-spacing: 0.5rem;
+    text-align: center;
+}
+
+span{
+    text-transform: uppercase;
+}
+
+.capitalize{
+    color: rgba(46, 159, 46, 0.515);
+    text-transform: capitalize;
+
+}
+
+.w3schools{
+    text-align: center;
+}
