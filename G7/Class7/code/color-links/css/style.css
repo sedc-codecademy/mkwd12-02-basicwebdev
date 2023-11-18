@@ -1,0 +1,50 @@
+.color-name {
+    color: red;
+}
+
+.hex-code {
+    color: #48d9ef;
+    opacity: 0.9;
+}
+
+.rgb-color {
+    color: rgb(30, 253, 5);
+    background-color: rgba(29, 6, 1, 0.45);
+}
+
+h1 {
+    color: blue;
+    opacity: 0.5;
+}
+
+h1:hover {
+    color: red;
+}
+
+h2 {
+    color: hsl(61, 92%, 57%);
+    background-color: hsl(9, 91%, 49%, 0.8);
+}
+
+a {
+   text-decoration: none; 
+   cursor: grab;
+   color: red;
+}
+
+#styling-hyperlinks:visited {
+    color: #57f977;
+}
+
+#styling-hyperlinks:hover {
+    color: #0301f8;
+}
+
+#styling-hyperlinks:focus {
+    color: black;
+}
+
+#styling-hyperlinks:active {
+    color: yellow;
+}
+
