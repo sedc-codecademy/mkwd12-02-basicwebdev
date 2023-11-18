@@ -1,0 +1,32 @@
+body {
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 5px;
+}
+
+a:link {
+  color: goldenrod;
+}
+
+a:visited {
+  color: darkred;
+}
+
+a:hover {
+  background-color: lightgray;
+  text-decoration: underline;
+}
+
+a:focus {
+  background-color: #0e0e60;
+  color: #90ee90;
+}
+
+a:active {
+  color: #0e0e60;
+  background-color: #90ee90;
+}
