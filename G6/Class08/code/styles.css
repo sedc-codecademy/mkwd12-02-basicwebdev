@@ -1,0 +1,220 @@
+#myNav {
+    background-color: bisque;
+    list-style-type: none;
+}
+
+/* ID SELECTOR */
+#logo {
+    text-decoration: underline;
+    cursor: pointer;
+    color: green;
+}
+
+/* style applied when we hover on the logo (element with id logo) */
+#logo:hover{
+    color: yellow
+}
+
+/* TAG SELECTOR */
+/* SITE A TAGAVI VO NASATA STRANA */
+a {
+    text-decoration: none;
+}
+
+/* Link psuedo class */
+/* link will change the default blue color on the links
+that have not been visited yet! */
+a:link {
+    color: deeppink;
+}
+
+/* Visited psuedo class */
+/* visited will change the color of the link that we have visited */
+a:visited {
+    /* red green blue */
+    color: rgb(107, 84, 40);
+}
+
+/* Hover psuedo class */
+/* hover will change the style of the element that
+we are above with the cursor */
+a:hover {
+    color: blue;
+    /* will change the icon of the mouse */
+    cursor: crosshair;
+}
+
+/* active */
+/* active psuedo class will change the style of the element that is in active stave, meaning, we are clicking on it, or we click and hold with left click on the mouse */
+a:active {
+    color: greenyellow;
+}
+
+
+/* input styling */
+#username:focus {
+    outline-color: red;
+}
+
+#myCostumSection {
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+}
+
+/* Hover on DIV element */
+#myCostumSection:hover {
+    width: 200px;
+}
+
+/* Tips and tricks, using border
+we can see visually the "invisibe border"  that HTML assigned to the element */
+#firstTitle {
+    border-width: 1px;
+    border-style: solid;
+    border-color: red;
+}
+
+#secondTitle{
+    /* Same as above in #firstTitle but shorter */
+   border: 1px solid red;
+}
+
+/* Traffic lights */
+
+.dimensions {
+    width: 60px;
+    height: 60px;
+}
+
+.red {
+    background-color: red;
+    /* width: 60px;
+    height: 60px; */
+    /* display: inline; */
+    display: inline-block;
+}
+
+.yellow {
+    background-color: yellow;
+    /* width: 60px;
+    height: 60px; */
+    /* display: inline; */
+    display: inline-block;
+}
+
+.green {
+    background-color: green;
+    /* width: 60px;
+    height: 60px; */
+    /* display: inline; */
+    display: inline-block;
+}
+
+/* Traffic lights with span */
+
+
+.redSpan {
+    background-color: red;
+    width: 60px;
+    height: 60px;
+    /* span element by default has display of inline */
+    /* display: inline; */
+    /* display: inline-block; */
+}
+
+.yellowSpan {
+    background-color: yellow;
+    width: 60px;
+    height: 60px;
+    /* display: inline; */
+}
+
+.greenSpan {
+    background-color: green;
+    width: 60px;
+    height: 60px;
+    /* display: inline; */
+}
+
+/* MARGIN & PADDING */
+#boxesWrapper {
+    border: 1px solid red;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    background-color: blanchedalmond;
+    border: 1px solid black;
+}
+
+/* Margin => is the invisible "reserved" space that the element adds on it's outside borders */
+.box1 {
+  /* margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px; */
+
+  /* Same as above but shorter */
+  /* will apply margin of 20px on EACH side */
+  /* margin: 20px; */
+
+  /* Will add 20px top and below, 15px left and right */
+  /* margin: 20px 15px; */
+
+  /* If we want to apply in each side, using the short syntax
+  will apply the following margin values clock wise, starting: 
+  10px top, 15px right, 20px, bottom, 5px left */
+  margin: 10px 15px 20px 5px;
+  padding: 15px;
+}
+
+
+/* Padding => is the invisible "reserved" space that the element adds on it's INSIDE borders */
+
+.box2 {
+    /* padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px; */
+
+    /* Will apply 20px on EACH SIDE */
+    /* padding: 20px; */
+
+   /* TOP-BOTTOM; LEFT-RIGHT */
+   /* padding: 20px 15px; */
+
+   /* CLOCKWISE VERSION */
+
+   /* TOP-RIGHT-BOTTOM-LEFT */
+   padding: 20px 15px 40px 15px;
+}
+
+/* Content box vs Border box */
+#contentBox{
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    border: 1px solid black;
+    padding-left: 10px;
+    padding-right: 10px;
+    /* This property value is the default one */
+    /* Each element that is content-box, to it's width and height
+    will be padded the padding and the border */
+    box-sizing: content-box;
+}
+
+#borderBox{
+    margin-top: 10px;
+    width: 200px;
+    height: 200px;
+    background-color: green;
+
+    border: 1px solid black;
+    padding-left: 10px;
+    padding-right: 10px;
+    /* Each element that is border-box, the padding and border
+    won't  be calculated and added on top of the width and the height*/
+    box-sizing: border-box;
+}
