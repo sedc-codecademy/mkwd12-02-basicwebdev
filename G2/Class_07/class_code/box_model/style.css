@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    padding: 30px;
+    /* border: solid 3px black; */
+}
+
+.custom-border {
+    border-style: ridge dotted double dashed;
+    border-color: black red fuchsia green;
+
+    border-width: 20px 30px 10px 10px;
+}
+
+.padding30 {
+    padding: 30px;
+}
+
+
+
+
+.height500 {
+    height: 500px;
+}
+
+.width500 {
+    width: 500px;
+}
+
+.width100 {
+    width: 100px;
+}
+
+.height100 {
+    height: 100px;
+}
+
+.red-background {
+    background-color: red;
+    color: yellow;
+}
+
+.purple-background {
+    background-color: fuchsia;
+    color: green;
+}
+
+.green-background {
+    background-color: green;
+    color: blueviolet;
+}
+
+.blue-background {
+    background-color: blue;
+    color: yellow;
+}
+
+.hidden-overflow {
+    overflow: hidden;
+}
+
+.scroll-overflow {
+    overflow: scroll;
+}
+
+
+.inline-block {
+    display: inline-block;
+}
+
