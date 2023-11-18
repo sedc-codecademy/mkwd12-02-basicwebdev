@@ -1,0 +1,77 @@
+/* style.css  */
+
+/* Universal selector */
+
+* {
+    font-family: Arial;
+}
+
+/* Type (tag) selector */
+
+p {
+    color: red !important;
+}
+
+/* class selector */
+
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/* id selector */
+
+#paragraph01 {
+    font-size: 22px;
+    color: blueviolet !important;
+    background-color: yellowgreen;
+}
+
+/* child selectors */
+
+.bold > span {
+    color: orange;
+}
+
+/* child and general sibling selector */
+
+.bold > span ~ span {
+    color: red;
+}
+
+p > span {
+    color: aqua;
+}
+
+/* descendant selector */
+
+nav a {
+   color: peru; 
+}
+
+nav li {
+    color:aqua;
+}
+
+nav li li {
+    color: yellowgreen;
+}
+
+/* Adjecent sibling selector */
+
+h3 + p {
+    font-family: Georgia;
+}
+
+/* General sibling selector */
+
+h1 ~ p {
+    padding-bottom: 30px;
+}
+
+h3 ~ p {
+    padding-top: 20px;
+}
