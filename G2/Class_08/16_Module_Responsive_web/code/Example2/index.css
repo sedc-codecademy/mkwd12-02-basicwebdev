@@ -1,0 +1,37 @@
+h1 {
+  color: brown;
+}
+
+body {
+  background-color: aqua;
+}
+
+/* @media all and (min-width: 600px), (orientation: landscape) {
+  body {
+    background-color: yellowgreen;
+  }
+  h1 {
+    font-family: cursive;
+  }
+}
+
+@media all and (min-width: 1084px) {
+  body {
+    background-color: tomato;
+  }
+  h1 {
+    color: white;
+  }
+} */
+
+/* @media all and (orientation: landscape) {
+  body {
+    background-color: thistle;
+  }
+}
+
+@media all and (orientation: portrait) {
+  body {
+    background-color: black;
+  }
+} */
