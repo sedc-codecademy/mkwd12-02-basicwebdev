@@ -1,0 +1,55 @@
+#container {
+  width: 400px;
+  height: 300px;
+  background-color: turquoise;
+  margin: 100px;
+
+  /* position: relative; */
+}
+#first {
+  height: 50px;
+  border: 1px solid black;
+  background-color: tomato;
+
+  /* position: relative;
+  left: 10px;
+  top: 20px; */
+
+  /* can be placed from the point of the viewport but also from the parent if the parent has different position than static (most of the time we use relative) */
+  /* position: absolute;
+  bottom: 20px;
+  right: 20px; */
+
+  /* always sticks with the viewport and stays if we scroll */
+  /* position: fixed;
+  top: 0;
+  left: 0; */
+}
+
+#second {
+  height: 50px;
+  border: 1px solid black;
+  background-color: green;
+}
+
+#third {
+  height: 50px;
+  border: 1px solid black;
+  background-color: yellow;
+}
+
+#float {
+  width: 100%;
+  border: 1px solid green;
+}
+
+#float > div {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  color: white;
+}
+
+#float1 {
+  float: right;
+}

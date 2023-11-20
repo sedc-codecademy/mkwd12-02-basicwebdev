@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="./styles.css"/>
+    <title>Hyperlinks</title>
+</head>
+<body>
+    <h1>
+        Hyperlinks
+    </h1>
+
+    <hr />
+    <!-- NAVIGATION HYPERLINKS-->
+    <header>
+        <h2 id="logo">LOGO</h2>
+        <nav>
+            <ul id="myNav">
+                <li>
+                    <a href="#">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="./pages/about-us.html">
+                        About us
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://en.wikipedia.org/wiki/Solar_System">
+                        Planets
+                    </a>
+                </li>
+                <li>
+                    <a href="https://en.wikipedia.org/wiki/Sun" target="_blank">
+                        The Sun
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>    
+    
+    <label for="username">Username</label>
+    <input type="text" placeholder="enter username" id="username"/>
+    <hr />
+    <div id="myCostumSection">HELLO WORLD</div>
+    <!-- BOX MODEL -->
+    <hr />
+    <section>
+        <!-- BLOCK ELEMENTS EXAMPLE -->
+        <!-- BLOCK ELEMENTS will always use the all avaiable space on the screen -->
+        <!-- INLINE-BLOCK elements will use only the nessecery space of the screen -->
+
+        <!-- heading elements are BLOCK elements
+        meaning, that will USE the whole available space on the screen!!! -->
+        <h2 id="firstTitle">I am title</h2>  
+        <h2 id="secondTitle">Second Title</h2>
+        <h3>Third title</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates tempore ipsa eligendi mollitia earum, in dolorum veniam quia ducimus officiis eius ipsum, reprehenderit error quidem voluptate placeat iste possimus? Quasi?</p>
+
+        <!-- INLINE BLOCK ELEMENTS EXAMPLE -->
+        <p>
+            <img src="https://pinnacle.works/wp-content/uploads/2022/06/dummy-image.jpg" alt="some photo" width="200px" />
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. <b>Soluta temporibus</b> eum libero et asperiores quia dolor, <i>expedita voluptatum atque nulla nobis quam repudiandae, iure rerum enim eveniet? Inventore, veritatis? Eligendi.</i>
+        </p>
+        <!-- p is block element, meaning all the time will take all
+        space from the screen and will break into new line -->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum delectus accusantium impedit magni error adipisci, veniam corporis nisi, provident, saepe quia recusandae harum totam officia ex voluptas esse laboriosam velit.</p>
+    </section>
+    <hr />
+    <!-- TRAFFIC LIGHTS -->
+    <!-- THE DIVS are block elements -->
+    <h2>Traffic lights</h2>
+
+
+    <!-- Traffic light section one -->
+    <section>
+        <div class="red dimensions">RED</div>
+        <div class="yellow dimensions">YELLOW</div>
+        <div class="green dimensions">GREEN</div>
+    </section>
+
+
+    <!-- Traffic lights second -->
+    <!-- Traffic light section two -->
+    <section>
+        <span class="redSpan">RED</span>
+        <span class="yellowSpan">YELLOW</span>
+        <span class="greenSpan">GREEN</span>
+    </section>
+
+    <!--  MARGIN & PADDING -->
+    <hr />
+    <section id="boxesWrapper">
+        <div class="box box1">First box</div>
+        <div class="box box2">Second box</div>
+        <div class="box box3">Third box</div>
+    </section>
+
+
+    <!-- CONTENT BOX vs BORDER BOX -->
+    <hr />
+    <section>
+        <div id="contentBox"></div>
+        <div id="borderBox"></div>
+    </section>
+</body>
+</html>

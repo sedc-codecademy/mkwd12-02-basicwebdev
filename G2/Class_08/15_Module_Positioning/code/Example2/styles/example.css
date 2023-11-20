@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+}
+
+.page-header {
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 50px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.page-header > .page-header-left {
+    float: left;
+}
+
+.page-header > .page-header-right-nav {
+    float: right;
+}
+
+nav > ul {
+    list-style-type: none;
+}
+
+nav > ul > li {
+    display: inline-block;
+    color: white;
+    text-transform: uppercase;
+    margin-right: 10px;
+}
+
+.main-container {
+    height: 600px;
+    background-image: url("https://sm.pcmag.com/pcmag_au/how-to/w/what-to-do/what-to-do-when-your-computer-screen-wont-show-a-picture_8ymb.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+    background-attachment: fixed;
+}
+
+.main-container-text {
+    text-transform: uppercase;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
