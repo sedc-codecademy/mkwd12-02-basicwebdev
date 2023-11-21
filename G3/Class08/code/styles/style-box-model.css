@@ -1,0 +1,58 @@
+* {
+  font-size: 30px;  
+}
+
+.first-div {
+    background-color: aqua;
+    padding: 20px;
+    border: 10px solid red;
+    margin: 40px;
+    width: 300px;
+    height: 60px;
+    box-sizing: border-box;
+}
+
+.second-div {
+    background-color: chocolate;
+    width: 300px;
+    height: 60px;
+    border: 10px solid blueviolet;
+    margin: 80px;
+}
+
+.third-div {
+    background-color:chartreuse;
+    width: 200px;
+    height: 50px;
+    border: 10px solid blueviolet;
+    /* margin: 60px 70px 90px 100px; */
+    margin: 100px 60px;
+    /* padding: 30px 50px 70px 90px; */
+    padding: 30px 50px;
+    /* box-sizing: border-box; */
+}
+
+.one {
+    border-style: solid;
+    border-width: 20px 5px;
+    border-color: red green blue yellow;
+}
+
+.two {
+    border-style: solid double inset dotted;
+    border-width: 15px 7px 3px 10px;
+}
+
+.three {
+    border: 4px dashed red;
+    border-radius: 10%;
+}
+
+.content {
+    width: 200px;
+    height: 200px;
+    background-color: antiquewhite;
+    padding: 10px;
+    overflow: auto;
+    
+}
