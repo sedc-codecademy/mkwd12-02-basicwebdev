@@ -1,0 +1,15 @@
+/* used for debugging */
+header, nav, article {
+    border: 1px solid black;
+}
+
+nav {
+    height: 100px;
+    position: relative;
+}
+
+#contact-us {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
