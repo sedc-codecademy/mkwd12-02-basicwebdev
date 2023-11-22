@@ -1,0 +1,43 @@
+body {
+    background-color: green;
+}
+
+main, aside {
+    border: 1px solid black;
+}
+
+aside {
+    width: 30%;
+    float: left;
+}
+
+main {
+    width: 69%;
+    float: right;
+}
+
+@media screen and (max-width: 1200px) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        background-color: #f08080;
+    }
+    aside {
+        float: none;
+        width: 100%;
+    }
+    main {
+        float: none;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    body {
+        background-color: red;
+    }
+}
