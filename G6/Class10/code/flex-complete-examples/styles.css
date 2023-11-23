@@ -1,0 +1,49 @@
+header {
+    display: flex;
+    border-bottom: 3px solid grey;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#navList {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+#navList li {
+    cursor: pointer;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#navList li:hover{
+    color: red;
+    text-shadow: 1px 1px 10px grey;
+}
+
+
+/* MAIN */
+/* vh => view height */
+/* vw => view width */
+main {
+    height: 90vh;
+    display: flex;
+    gap: 30px;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+#sidebar {
+    background-color: blue;
+    /* flex-grow: 1; */
+    width: 40%;
+}
+
+#mainSection {
+   background-color: purple;
+    /* flex-grow: 3; */
+    width: 60%;
+}

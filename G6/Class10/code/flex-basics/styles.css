@@ -1,0 +1,139 @@
+#container {
+    background-color: beige;
+    height: 200px;
+    display: flex;
+
+    /* **** FLEX-DIRECTION **** */
+    /* using flex-direction row will position the elements on the x/main (horizontal) axis */
+    flex-direction: row;
+    /* flex-direction: row-reverse; */
+
+    /* using flex-direction column will position the elements on the x/cross (vertical) axis */
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+
+    /* **** JUSTIFY-CONTENT **** */
+    justify-content: space-around;
+    /* justify-content: space-evenly; */
+    /* justify-content: space-between; */
+    /* justify-content: flex-start; */
+    /* justify-content: flex-end; */
+
+
+    /* **** GAP **** */
+    gap: 10px;
+
+    /* **** FLEX-WRAP **** */
+    flex-wrap: wrap;
+
+
+    /* **** ALIGN-ITEMS **** */
+    /* To use align items in flex-direction:row, the flex container MUST have height */
+
+    /* align-items: flex-start; */
+    /* align-items: flex-end; */
+    align-items: center;
+}
+
+/* EXAMPLE COLUMN */
+#containerTwo {
+    background-color: beige;
+    height: 600px;
+    display: flex;
+
+
+    flex-direction: column;
+    /* when we use column, justify-content will work with the vertical axis (y), align items will work with the horizontal (x) axis */
+    justify-content: space-around;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: cadetblue;
+    border: 1px solid black;
+    text-align: center;
+    /* This is flex ITEM */
+    /* We can create the flex-item to be flex container as-well */
+}
+
+/* Layout example */
+#adsSection {
+    box-sizing: border-box;
+    padding: 20px;
+    width: 600px;
+    background-color: aqua;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* greenContainer is CHILD and FLEX ITEM to the adsSection (blue container) */
+#greenContainer {
+    background-color: green;
+    width: 250px;
+    height: 300px;
+    /* Even tough, this container is flex item to it's parent (adsSection / blue container ), We create it to be FLEX CONTAINER to it's children as-well */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+#redContainer {
+    background-color: red;
+    width: 250px;
+    height: 300px;
+}
+
+.purpleItem {
+    background-color: purple;
+    height: 100px;
+    width: 70px;
+    border: 1px solid black;
+}
+
+/* EXAMPLE 4 */
+#colorfulDiv {
+    height: 150px;
+    display: flex;
+    border: 1px solid black;
+    /* width: 450px; */
+}
+
+#colorfulDiv div {
+    flex-basis: 100px;
+}
+
+/* flex shrink will shirnk the element when the parent (flex container has fixed width) */
+#redColor {
+    background-color: red;
+    order: 2;
+    /* flex-grow is prop. to the flex-item  */
+    flex-grow: 2;
+    /* flex-shrink: 10; */
+}
+
+#yellowColor {
+    background-color: yellow;
+    flex-grow: 1;
+    order: 3;
+}
+
+#blueColor {
+    background-color: blue;
+    /* flex-shrink: 15; */
+    flex-grow: 1;
+}
+#orangeColor {
+    background-color: orange;
+}
+
+#pinkColor {
+    background-color: pink;
+}
