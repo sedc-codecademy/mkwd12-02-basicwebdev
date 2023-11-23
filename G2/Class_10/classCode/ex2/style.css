@@ -1,0 +1,36 @@
+.grid {
+    display: grid;
+    grid-template-rows: 1fr 0.5fr 2fr 1fr;
+    grid-template-areas:
+        'header header'
+        'navbar navbar'
+        'sidebar content'
+        'sidebar content'
+        'footer footer'
+    ;
+}
+
+.item {
+    border: 1px solid rgb(0, 128, 0);
+    padding: 20px;
+}
+
+.item1 {
+    grid-area: header;
+}
+
+.item2 {
+    grid-area: navbar;
+}
+
+.item3 {
+    grid-area: content;
+}
+
+.item4 {
+    grid-area: sidebar;
+}
+
+.item5 {
+    grid-area: footer;
+}
