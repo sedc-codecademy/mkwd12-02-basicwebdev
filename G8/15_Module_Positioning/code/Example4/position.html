@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+         <style type="text/css">
+         .parent{
+             padding: 5px;
+             background-color: blue;
+             position:relative; 
+             height:400vh;
+         }
+
+         .child-one{
+             padding:5px;
+             background-color: rgb(116,255,116);
+             height:100px;
+             /*position:relative;
+             left:10px;
+             top:10px;
+             position:absolute;
+             top:0px;
+             
+             position:fixed;
+             top:0px;*/
+             position:sticky;
+             top:0px;
+         }
+
+         .child-two{
+             padding:5px;
+             background-color: rgb(248,177,116);
+         }
+
+         .child-three{
+             padding:5px;
+             background-color: rgb(255,116,232);
+         }
+
+         img{
+             position:relative;
+             left:50%;
+         }
+
+         </style>
+    </head>
+    <body>
+        <div class="parent">Parent
+            <div class="child-one">One</div>
+            <div class="child-two">Two</div>
+            <div class="child-three">Three</div>
+            <img src="img/Canada_topo.jpg" width="50" height="50px"/>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,34 @@
+header, nav, aside, section, footer {
+    background-color: gray;
+    margin: 5px;
+}
+
+.header, .footer {
+    height: 50px;
+}
+
+.navigation {
+    height: 20px;
+}
+
+.main {
+    height: 300px;
+}
+
+.aside, .section {
+    height: 100%;
+}
+
+.aside {
+    width: calc(20% - 10px);
+    float: left;
+}
+
+.section {
+    width: calc(80% - 10px);
+    float: right;
+}
+
+.footer {
+    clear: both;
+}

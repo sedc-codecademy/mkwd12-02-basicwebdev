@@ -1,0 +1,80 @@
+/* Resets all margins and paddings */
+/* * {
+  margin: 0;
+  padding: 0;
+} */
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+  /* Always remove margin from body */
+  margin: 0;
+}
+
+.box {
+  background-color: lightgreen;
+  width: 150px;
+  height: 150px;
+  border: 5px solid darkblue;
+  padding: 10px;
+  margin: 10px;
+}
+
+.example-box {
+  /* Ways of adding margin and padding */
+  /* margin-top: 30px;
+  margin-right: 15px;
+  margin-bottom: 20px;
+  margin-left: 15px; */
+
+  /* Shorthand for above */
+  /* margin: 30px 15px 20px 15px; */
+
+  /* Adds margin to top/bottom left/right, use auto to add equally the available space */
+  /* margin: 10px 50px; */
+
+  /* Adds margin to all sides equally */
+  margin: 40px;
+
+  padding: 20px;
+
+  /* Ways of adding border */
+
+  /* Setting global border */
+  border: 5px solid darkblue;
+
+  border-left: 5px dashed darkred;
+  border-right: 5px dotted darkred;
+}
+
+span {
+  background-color: lightblue;
+  font-size: 1.5rem;
+  width: 100px;
+  height: 20px;
+  /* Inline block doesn't break into new line but it respects width and height */
+  display: inline-block;
+  /* margin: 10px; */
+}
+
+.standard-box {
+  box-sizing: content-box;
+}
+
+.alternative-box {
+  box-sizing: border-box;
+}
+
+.overflow-box {
+  box-sizing: border-box;
+  width: 150px;
+  height: 200px;
+  background-color: lightcoral;
+  padding: 10px;
+  margin: 10px;
+  border: 4px solid darkred;
+  overflow: hidden;
+}

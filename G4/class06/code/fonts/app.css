@@ -20,9 +20,38 @@ section {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 5rem;
+  letter-spacing: 0.5rem;
+  text-align: center;
+  text-shadow: 5px 5px 10px hotpink;
 }
 
 h2 {
   font-size: 2.5rem;
+  font-style: italic;
+}
+
+.transform-paragraph {
+  text-transform: uppercase;
+}
+
+.decoration-link {
+  text-decoration-line: line;
+  text-decoration-style: solid;
+  text-decoration-color: hotpink;
+  text-decoration-thickness: 3px;
+}
+
+.line-height-paragraph {
+  line-height: 3.5rem;
+}
+
+.text-align-paragraph {
+  text-align: right;
+}
+
+.pseudo-selector-paragraph::first-letter {
+  font-size: 4rem;
+  background-color: hotpink;
+  font-weight: 700;
 }

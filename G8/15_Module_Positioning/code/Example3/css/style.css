@@ -1,0 +1,66 @@
+body {
+    height: 2000px;
+}
+
+
+.relative {
+    position: relative;
+    top: 30px;
+    left: 150px;
+
+    border: 1px solid grey;
+}
+
+.absolute-parent {
+    width: 1200px;
+    position: relative;
+    margin: 50px 0;
+    border: 1px solid grey;
+
+    /* z-index: 999999; */
+}
+
+/* .sub-header {
+    position: relative;
+    z-index: 55;
+} */
+
+.absolute-child {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    background-color: yellow;
+    z-index: -5;
+}
+
+.fixed {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    background-color: whitesmoke;
+    border: 1px solid red;
+    font-size: 33px;
+}
+
+.sticky {
+    position: sticky;
+    height: 55px;
+    background-color: brown;
+    color: white;
+    top: 50px;
+}
+
+.float-parent {
+    border-top: 1px solid red;
+}
+
+.float {
+    width: 80px;
+    height: 100px;
+    background-color: salmon;
+    float: left;
+}
+
+.clear-style {
+    clear: both;
+}

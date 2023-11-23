@@ -1,0 +1,53 @@
+html{
+    box-sizing: border-box;
+}
+
+*{
+    box-sizing: inherit;
+}
+
+body{
+    background-color: #f3f3f3;
+    display: flex;
+}
+
+#left-sidebar, main, #right-sidebar{
+    padding: 40px;
+}
+
+#left-sidebar{
+    flex: 1 1 20%;
+    background-color: #fff;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+main{
+    flex: 1 1 60%;
+}
+
+#right-sidebar{
+    flex: 1 1 20%;
+}
+
+
+@media screen and (max-width: 850px){
+    body{
+        flex-direction: column;
+    }
+
+    main{
+        order: 1;
+    }
+
+    #left-sidebar{
+        height: auto;
+        order: 2;
+    }
+
+    #right-sidebar{
+        order: 3;
+    }
+}
