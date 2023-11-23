@@ -1,0 +1,50 @@
+#body {
+    height: 2000px;
+}
+
+.relative {
+    position: relative;
+    top: 30px;
+    left: 150px;
+}
+
+.absolute-parent {
+    position: relative;
+    border: 1px solid red;
+    margin: 50px 0;
+}
+
+.absolute-child {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    background-color: yellow;
+    z-index: 2;
+}
+
+.sub-header {
+    position: relative;
+    z-index: 3;
+}
+
+.fixed {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    color: green;
+}
+
+.sticky {
+    position: sticky;
+    top: 20px;
+}
+
+.float {
+    float: left;
+    width: 80px;
+    height: 50px;
+}
+
+.clear-style {
+    clear: left;
+}
