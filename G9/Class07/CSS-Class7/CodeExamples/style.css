@@ -1,0 +1,121 @@
+p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+p.second-paragraph {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+a.google:visited {
+    color: red;
+}
+.search-button{
+    background-color: grey;
+    color: white;
+}
+
+.search-button:hover{
+    background-color: aqua;
+}
+.search-button:focus{
+    background-color: coral;
+}
+
+.search-input:focus{
+background-color: coral;
+border-width: 10px;
+}
+
+.block-level-div > p {
+background-color: coral;
+width: 500px;
+display: inline-block;
+padding: 20px;
+margin: 30px;
+}
+
+.navigation-menu{
+    list-style-type: none;
+}
+.navigation-menu > li {
+    display: inline-block;
+    width: 100px;
+}
+
+.standard-box-model{
+    width: 300px;
+    height: 150px;
+    border: 1px solid black;
+    padding: 25px;
+    margin: 10px;
+}
+
+.alternative-box-model{
+    box-sizing: border-box;
+    width: 300px;
+    height: 150px;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 10px;
+}
+
+.margin-property{
+    border: 1px solid black;
+    margin-top: 30px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+}
+/* .margin-property{ */
+    /* Shorthand for margin */
+    /* top right bottom left */
+    /* margin: 20px 15px 30px 10px; */
+
+    /* top right&left bottom */
+    /* margin: 20px 15px 30px; */
+
+    /* top&bottom left&right */
+    /* margin: 40px 20px; */
+
+    /* top&right&bottom&left */
+    /* margin: 20px;
+} */
+
+.padding-property{
+    border: 1px solid black;
+    padding-top: 20px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+}
+
+.border-property{
+    /* border-top-width: 5px;
+    border-right-width: 1px;
+    border-bottom-width: 2px;
+    border-left-width: 10px; */
+    border-style: dotted;
+    border-color:cadetblue;
+    border-width: 3px;
+    
+}
+.border-property>span{
+    background-color: coral;
+   display: inline-block;
+   width: 300px;
+   height: 150px;
+}
+
+.overflow-property{
+border: 1px solid black;
+margin-bottom: 50px;
+width: 300px;
+height: 150px;
+overflow: auto;
+}

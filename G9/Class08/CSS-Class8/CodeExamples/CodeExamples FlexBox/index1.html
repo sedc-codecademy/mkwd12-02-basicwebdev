@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style1.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <h3>Display: flex. The main axis is defined by flex-direction, which has four possible values: row, row-reverse, column, column-reverse</h3>
+<section id="flex">
+    <!-- Display flex, flex-direction: row -->
+    <section class="box1">
+        <div class="boxStyle" >Row</div>
+        <div class="boxStyle">Row</div>
+        <div class="boxStyle" >Row</div>
+    </section> 
+ <!-- Display flex, flex-direction: row-reverse -->
+    <section class="box2">
+        <div class="boxStyle">Row-reverse</div>
+        <div class="boxStyle">Row-reverse</div>
+        <div class="boxStyle" >Row-reverse</div>
+    </section> 
+ <!-- Display flex, flex-direction: column -->
+ <section class="box3">
+    <div class="boxStyle" >Column</div>
+    <div class="boxStyle">Column</div>
+    <div class="boxStyle" >Column</div>
+</section> 
+ <!-- Display flex, flex-direction: column-reverse -->
+ <section class="box4">
+    <div class="boxStyle" >Column-reverse</div>
+    <div class="boxStyle">Column-reverse</div>
+    <div class="boxStyle" >Column-reverse</div>
+</section>
+</section>
+<!-- Flex-wrap:nowrap -->
+<p>When a flex container has <b>positive free space</b>, it has more space than is required to display the flex items inside the container.</p>
+<p>We have <b>negative free space</b>, when the natural size of the items adds up to larger than the available space in the flex container.</p>
+<p>It is this distribution of positive free space and removal of negative free space that we need to understand in order to understand the flex properties.</p>
+<ul>
+    <li>Flex-basis</li>
+    <li>Flex-shrink</li>
+    <li>Flex-grow</li>
+</ul>
+<section id="flex2">
+    <section class="box5">
+        <div class="boxStyle" id="div1">Flex-shrink</div>
+        <div class="boxStyle">No-wrap</div>
+        <div class="boxStyle" >No-wrap</div>
+        <div class="boxStyle" >No-wrap</div>
+        <div class="boxStyle">No-wrap</div>
+    </section>
+    <section class="box6">
+        <div class="boxStyle" >No-wrap</div>
+        <div class="boxStyle" id="div2">Flex-grow</div>
+        <div class="boxStyle" >No-wrap</div>
+    </section>
+</section>
+<!-- Flex-wrap:wrap -->
+<p>To cause wrapping behaviour add the property flex-wrap with a value of wrap. Now, should your items be too large to all display in one line, they will wrap onto another line.</p>
+<section id="flex3">
+    <section class="box7">
+        <div class="boxStyle" >Wrap</div>
+        <div class="boxStyle">Wrap</div>
+        <div class="boxStyle" >Wrap</div>
+        <div class="boxStyle" >Wrap</div>
+        <div class="boxStyle">Wrap</div>
+        <div class="boxStyle" >Wrap</div>
+    </section>
+
+</section>
+</body>
+</html>

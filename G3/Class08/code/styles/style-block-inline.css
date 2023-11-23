@@ -1,0 +1,63 @@
+/* .image-block-paragraph {
+    width: 200px;
+} */
+
+.block-header {
+    background-color: coral;
+    width: 70%;
+    height: 100px;
+}
+
+.block-paragraph {
+    background-color: cadetblue;
+}
+.block-div {
+    background-color: bisque;
+    height: 50px; /* won't apply because it is an inline element*/
+    width: 200px; /* won't apply because it is an inline element*/
+    display: inline;
+}
+
+.block-ol {
+    background-color: aqua;
+}
+
+.inline-span {
+    background-color: crimson;
+    height: 100px; /* won't apply because it is an inline element*/
+    width: 200px; /* won't apply because it is an inline element*/
+}
+
+.inline-strong {
+    background-color: cornflowerblue;
+}
+
+u {
+    display: block;
+}
+
+.container {
+    text-align: center;
+}
+
+.box {
+   width: 150px;
+   height: 150px; 
+   background-color: cyan;
+   border: 10px solid blue;
+   margin: 10px;
+   vertical-align: middle;
+}
+
+.combined-box {
+    display: inline-block;
+}
+
+.test {
+    background-color: blueviolet;
+}
+
+#specific-box {
+    width: 200px;
+}
+

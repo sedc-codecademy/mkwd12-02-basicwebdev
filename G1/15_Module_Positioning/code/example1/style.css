@@ -1,0 +1,68 @@
+/* used for debugging */
+header, nav, article, footer {
+    border: 1px solid black;
+}
+
+nav {
+    height: 100px;
+    position: sticky;
+    background-color: lightcoral;
+    top: 0;
+    z-index: 3;
+}
+
+#contact-us {
+    /* absolute takes the element OUT of the normal flow */
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.static-article {
+    /* this is set by default */
+    position: static;
+}
+
+.relative-p {
+    background-color: lightblue;
+    /* relative keeps the element in the normal flow */
+    position: relative;
+    top: 5px;
+    left: 3px;
+    z-index: 1;
+}
+
+#top {
+    background-color: red;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    color: white;
+    border-radius: 50%;
+    font-size: 14px;
+    padding: 5px;
+    z-index: 2;
+}
+
+footer {
+    background-color: green;
+}
+
+footer > div {
+    border: 1px solid black;
+    height: 50px;
+}
+
+#left {
+    width: 49%;
+    float: left;
+}
+
+#right {
+    width: 49%;
+    float: right;
+}

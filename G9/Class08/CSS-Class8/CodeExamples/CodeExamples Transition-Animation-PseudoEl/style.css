@@ -1,0 +1,84 @@
+.transition {
+  background: #2db34a;
+  border-radius: 6px;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  transition-property: background;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+}
+
+.animation {
+  background: #2db34a;
+  border-radius: 6px;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+}
+
+
+
+.transition:hover {
+  background: #ff7b29;
+}
+
+@keyframes slide {
+  0% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+
+  25% {
+    background-color: yellow;
+    left: 200px;
+    top: 0px;
+  }
+
+  50% {
+    background-color: blue;
+    left: 200px;
+    top: 200px;
+  }
+
+  75% {
+    background-color: green;
+    left: 0px;
+    top: 200px;
+  }
+
+  100% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+}
+
+.animation:hover {
+  animation-name: slide;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+}
+body{
+  margin:40px;
+}
+
+p::first-line {
+  color: #ff0000;
+  text-transform: uppercase;
+}
+
+p::first-letter {
+  color: #8c00ff;
+  font-size: 40px;
+}
+
+#selection::selection {
+  background-color: rgb(220, 146, 161);
+}
+
+p::after {
+  content: url("https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcTiyCd1c9mvMjOag_jlwNccPuIuHtW8US9uttEbDjhmHcW5sdfjbYnzctuKBq0idh-feA4gvJnPWeZGO3Gg4wpGOgBPfJy-_CkqPo3lqg");
+}
+

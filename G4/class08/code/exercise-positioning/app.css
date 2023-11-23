@@ -1,0 +1,51 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+header,
+main,
+footer,
+nav {
+  background-color: black;
+  color: darkgray;
+  border: 2px solid lightgray;
+}
+
+header {
+  height: 100px;
+}
+
+nav {
+  height: 50px;
+}
+main {
+  height: 600px;
+  position: relative;
+}
+
+footer {
+  height: 100px;
+}
+
+.menu {
+  border-right: 2px solid lightgray;
+  width: 25%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.content {
+  width: 75%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
