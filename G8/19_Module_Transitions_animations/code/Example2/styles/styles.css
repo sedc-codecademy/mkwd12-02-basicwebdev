@@ -1,0 +1,31 @@
+.first-element,
+.second-element,
+.third-element {
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    background-color: green;
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .first-element,
+    .second-element,
+    .third-element {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 800px) {
+    .first-element,
+    .second-element,
+    .third-element {
+        background-color: lightcoral;
+    }
+}
