@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning schemas</title>
+    <link rel="stylesheet" href="./assets/styles.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Logo</h1>
+
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Blog</li>
+                <li>Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+
+   
+    <!-- MAIN CONTAINER -->
+    <main>
+        <!-- RELATIVE EXAMPLE -->
+        <div>
+            <h3>Hey, I am heading 3, and I am in normal flow.</h3>
+            <h3 id="relativeHeading">Hey, I am heading 3, but I am in the relative flow.</h3>
+            <h3>I am heading of normal flow as-well.</h3>
+            <h3 id="absoluteHeading">I am heading of normal absolute flow.</h3>
+        </div>
+        <!-- ABSOLUTE EXAMPLE -->
+        <hr />
+        <!-- Example where we used absolute element -->
+        <!-- Scenario #1: We used absolute element that is not INSIDE RELATIVE ELEMENT. Which mean, while positioning this element, it will STICK to the "borders" of the BODY ELEMENT -->
+        <div id="absoluteBox"></div>
+
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <hr />
+        <section id="relativeBox">
+            <div id="absoluteBoxInsideRelative"> </div>
+        </section>
+
+        <hr />
+        <!-- Real Example of relative + absolute -->
+        <div id="productCard">
+            <img src="https://dlcdnrog.asus.com/rog/media/1694045252838.webp" alt="gaming laptop" />
+
+            <p>Description for the gaming laptop</p>
+            <p id="close">X</p>
+            <button>Buy Now</button>
+            <button id="addToCart">Add to Cart</button>
+        </div>
+
+        <hr />
+        <!-- POSITION FIXED -->
+        <section>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique itaque, accusantium amet harum ipsa
+                molestiae expedita illo ipsam vel eum laboriosam culpa ratione earum nulla ab, error blanditiis ducimus
+                nobis?
+                Voluptate officia praesentium quae voluptas eum incidunt nobis sed eos, sequi itaque iusto voluptatem
+                aspernatur harum laboriosam, necessitatibus ratione non possimus beatae maxime laborum minima. Delectus
+                corrupti repellendus itaque officiis?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique itaque, accusantium amet harum ipsa
+                molestiae expedita illo ipsam vel eum laboriosam culpa ratione earum nulla ab, error blanditiis ducimus
+                nobis?
+                Voluptate officia praesentium quae voluptas eum incidunt nobis sed eos, sequi itaque iusto voluptatem
+                aspernatur harum laboriosam, necessitatibus ratione non possimus beatae maxime laborum minima. Delectus
+                corrupti repellendus itaque officiis?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique itaque, accusantium amet harum ipsa
+                molestiae expedita illo ipsam vel eum laboriosam culpa ratione earum nulla ab, error blanditiis ducimus
+                nobis?
+                Voluptate officia praesentium quae voluptas eum incidunt nobis sed eos, sequi itaque iusto voluptatem
+                aspernatur harum laboriosam, necessitatibus ratione non possimus beatae maxime laborum minima. Delectus
+                corrupti repellendus itaque officiis?</p>
+        </section>
+        <div id="chatBot"></div>
+
+       
+    </main>
+    <section>
+        <div id="movieOne">
+            <h2>Harry Potter and the Half Blood Prince</h2>
+            <p>
+                <img src="https://m.media-amazon.com/images/I/51uO1pQc5oL._AC_SY780_.jpg" alt="harry potter book" />
+
+                Harry Potter is the best... Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat praesentium dolorum quia. Sit a enim suscipit maxime autem, rerum repellendus eaque ex ut sequi quas dolore reprehenderit dolorem eligendi beatae!
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <div id="div1">Div number 1</div>
+        <div id="div 2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur vel id exercitationem modi dolorum perspiciatis ipsum ducimus fugit maxime dignissimos tempora, iusto, eum ab quasi, ut totam autem reiciendis? Doloremque.</div>
+    </section>
+</body>
+
+</html>

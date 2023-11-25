@@ -1,0 +1,32 @@
+body{
+    height: 1500px;
+}
+.container{
+width: 550px;
+border: 2px solid black;
+margin: 50px ;
+position: relative;
+}
+.box{
+    width: 150px;
+    height: 150px;
+}
+.purple{
+    background-color: rgb(205, 128, 205);
+    position: relative;
+    left:50px;
+    top:20px;
+}
+.orange{
+    background-color: rgb(222, 180, 103);
+    position: sticky;
+}
+.yellow{
+    background-color: rgb(238, 238, 123);
+    position:absolute;
+    right: 10px; 
+}
+.red{
+    background-color: rgb(224, 68, 68);
+    position: fixed;
+}

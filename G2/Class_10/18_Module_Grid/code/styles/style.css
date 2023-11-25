@@ -1,0 +1,97 @@
+/* Follow flow from: https://www.freecodecamp.org/news/css-grid-tutorial-with-cheatsheet/ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 40px;
+    width: 100%;
+    min-height: 100vh;
+}
+
+[class^="box-"] {
+    background-color: skyblue;
+
+    /* To place the letter at the center */
+    display: grid;
+    place-items: center;
+
+    border: 1px solid black;
+}
+
+.container {
+    display: grid;
+    /*gap: 20px;*/
+    height: 100vh;
+
+    /*!*  Change the values     👇 to experiment *!*/
+    /*grid-template-columns: 200px auto 100px;*/
+
+    column-gap:  50px;
+
+    /*!* Change the values  👇 to experiment *!*/
+    /*grid-template-rows: 200px auto 100px;*/
+
+    row-gap:  50px;
+
+    /* shorthand */
+
+    /*gap: 20px 50px;*/
+
+    /*grid-template-areas:*/
+    /*"A A A A   A A A A   A A A A"*/
+    /*"B B B B   B B B B   B B C C"*/
+    /*"B B B B   B B B B   B B C C";*/
+
+    /* each box is 200px by 200px */
+    /*grid-template-rows: 200px 200px;*/
+    /*grid-template-columns: 200px 200px;*/
+
+    /* Change values 👇  to experiment */
+    justify-items : end;
+
+    /* Change values 👇  to experiment */
+    align-items: center;
+
+    /* Change  values  👇  to experiment */
+    justify-content: center;
+
+    /* Change  values  👇  to experiment */
+    align-content : center;
+
+    /* The shorthand */
+    place-content: center end;
+    place-items: end center ;
+
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+}
+
+.box-1 {
+    /*grid-area: A;*/
+    /*grid-column : 1/10*/
+    grid-column : span 9;
+    /*grid-row : 1/11;*/
+    grid-row : span 10;
+
+    /*  Change values 👇  to experiment */
+    justify-self : start;
+
+    /*  Change values 👇  to experiment */
+    align-self : start;
+
+    /* shorthand */
+    place-self : start end ;
+}
+
+.box-2 {
+    /*grid-area: B;*/
+}
+
+.box-3 {
+    /*grid-area: C;*/
+}

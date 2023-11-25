@@ -1,0 +1,28 @@
+.grid-container-justify {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    gap: 10px;
+    padding: 10px;
+    background-color: coral;
+    justify-content: space-between;
+}
+
+.grid-container-justify > div {
+    border: 1px solid black;
+}
+
+.grid-container-align {
+    display: grid;
+    height: 300px;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 50px 50px;
+    gap: 10px;
+    padding: 10px;
+    background-color:cornflowerblue;
+    align-content:center;
+    justify-content: space-between;
+}
+
+.grid-container-align > div {
+    border: 1px solid black;
+}

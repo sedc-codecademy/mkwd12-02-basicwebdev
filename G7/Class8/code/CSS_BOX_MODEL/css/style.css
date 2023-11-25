@@ -1,0 +1,80 @@
+* {
+    text-align: center;
+}
+
+h1 {
+    background-color: orange;
+    width: 500px;
+    height: auto;
+
+    /* Margin */
+    margin-top: 50px;
+    margin-right: 70px;
+    margin-bottom: 40px;
+    margin-left: 80px;
+
+    margin: 50px 70px 40px 180px;
+    margin: 30px auto;
+
+    /* Padding */
+
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+
+    padding: 20px 20px 30px 20px;
+    padding: 20px 40px;
+    padding: 30px;
+
+    /* Border */
+
+    border-style: solid;
+    border-color: green;
+    border-top-width: 10px;
+    border-right-width: 5px;
+    border-bottom-width: 7px;
+    border-left-width: 5px;
+
+    border: 10px solid purple;
+
+    /* ads the padding and border size to the width and hight calculation */
+    /* box-sizing: border-box; */
+}
+
+span {
+    margin-top: 150px;
+    display: inline-block;
+    width: 100px;
+    background-color: red;
+}
+
+h2 {
+    margin-top: 80px;
+    background-color: aquamarine;
+    /* width: 100px; */
+    /* display: inline; */
+}
+
+p {
+    width: 300px;
+    height: 300px;
+    border: 1px solid red;
+    padding: 10px;
+    margin: 20px auto;
+
+    overflow: auto;
+}
+
+p::-webkit-scrollbar {
+    width: 50px;
+    background-color: yellow;
+}
+
+p::-webkit-scrollbar-thumb {
+    background-color: green;
+}
+
+p::-webkit-scrollbar-track {
+    background-color: orange;
+}

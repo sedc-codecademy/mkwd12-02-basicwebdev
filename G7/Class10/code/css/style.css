@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #333;
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #fff;
+    padding: 3em 0;
+    font-size: 30px;
+}
+
+article {
+    background-color: #fff;
+    padding: 5em;
+    margin: 20px 0;
+}
+
+h2 {
+    font-size: 18px;
+    color: #b3b3b3;
+}
+
+.parent {
+    border: 5px solid lightcoral;
+}
+
+.item {
+    background-color: deepskyblue;
+    color: white;
+    font-weight: bold;
+    padding: 15px 0;
+    margin: 5px;
+}
+
+
+/*Dsiplay flex */
+.example-flex {
+    display: flex;
+}
+
+/* Fex direction */
+.example-direction {
+    display: flex;
+
+    /* row, row-reverse, column, column-revers */
+    flex-direction: row-reverse;
+}
+
+.example-direction .item {
+    width: 50px;
+}
+
+/* Flex wrap */
+
+.example-wrap {
+    display: flex;
+    /*nowrap, wrap */
+    flex-wrap: wrap;
+}
+
+.example-wrap .item {
+    width: 300px;
+}
+
+.example-justify {
+    display: flex;
+    flex-direction: column;
+    /*flex-start, flex-end, center, space-between, space-around, space-evenly */
+    justify-content: space-evenly;
+    height: 400px;
+}
+
+.example-justify .item {
+    width: 50px;
+}
+
+
+/* Align Items */
+
+.example-align-items {
+    display: flex;
+    flex-direction: row;
+    height: 450px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.example-align-items .item {
+    width: 50px;
+}
+
+.example-align-items .item:nth-child(1) {
+    align-self: flex-end;
+}
+
+/* Align Content - only works when we have overflow
+and the flex-wrap property is set to wrap*/ 
+
+.example-align-content {
+    display: flex;
+    flex-direction: row;
+    height: 400px;
+    flex-wrap: wrap;
+
+    justify-content: flex-end;
+    align-content: center;
+}
+
+.example-align-content .item {
+    width: 350px;
+    height: 50px;
+}
+
+/* Flex order */
+.example-order {
+    display: flex;
+    flex-direction: row;
+}
+
+.example-order .item {
+    width: 50px;
+}
+
+.example-order .item:nth-child(1) {
+    order: 3;
+}
+
+.example-order .item:nth-child(2) {
+    order: -5;
+}
+
+.example-order .item:nth-child(3) {
+    order: 1;
+}
+
+.example-order .item:nth-child(4) {
+    order: 6;
+}
+
+.example-order .item:nth-child(5) {
+    order: 4;
+}
+
+/*flex grow */
+.example-grow {
+    display: flex;
+}
+
+.example-grow .item {
+    flex-grow: 1;
+}
+
+.example-grow .item:nth-child(2) {
+    flex-grow: 1.5;
+}
+
+
+.example-grow .item:nth-child(4) {
+    flex-grow: 2;
+}
+
+/*flex shrink */
+
+.example-shrink {
+    display: flex;
+}
+
+.example-shrink .item {
+    width: 50px;
+    flex-shrink: 1;
+}
+
+.example-shrink .item:nth-child(3) {
+    flex-shrink: 2;
+}
+
+.example-shrink .item:nth-child(5) {
+    flex-shrink: 1.5;
+}
+
+/* Flex basis */
+
+.example-basis {
+    display: flex;
+}
+
+.example-basis .item {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+
+.example-basis .item:nth-child(2) {
+    flex-basis: 200px;
+    width: 500px;
+    flex-grow: 2;
+}
+
+/* Flex shorthand */
+
+.example-shorthand {
+    display: flex;
+}
+
+/* Order of properties: flex-grow, flex-shrink, flex-basis */
+.example-shorthand .item {
+    flex: 1 1 50px;
+}
+
+.example-shorthand .item:nth-child(3) {
+    flex: 2 2 100px;
+}

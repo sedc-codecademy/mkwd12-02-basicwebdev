@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-1 {
+    border: 1px solid black;
+    display: flex;
+    /* height: 100vh; */
+    flex-direction: row;
+    /* row, row-reverse, column, column-reverse  */
+}
+
+.container-1 > div {
+    border: 1px solid black;
+}
+
+div {
+    border: 1px solid black;
+}
+
+.container-2 {
+    margin-top: 10px;
+    display: flex;
+    /* flex-direction: row;
+    flex-wrap: nowrap; */
+    flex-flow: row nowrap;
+    /* nowrap, wrap, wrap-reverse */
+    /* height: 100px; */
+}
+
+.container-2 > div {
+    height: 40px;
+    width: 100px;
+}
+
+.container-3 {
+    margin-top: 10px;
+    display: flex;
+}
+
+.container-3 > .child-a {
+    /* flex-basis: 100px;
+    flex-grow: 1;
+    flex-shrink: 2; */
+    flex: 1 2 100px;
+}
+
+.container-3 > .child-b {
+    /* flex-basis: 50px;
+    flex-grow: 2;
+    flex-shrink: 1; */
+    flex: 2 1 50px;
+    /* without shrink flex: 2 50px; */
+}
+
+.container-3 > .child-c {
+    /* flex-basis: 150px;
+    flex-grow: 0; 
+    flex-shrink: 5; */
+    flex: 0 5 150px;
+}
+
+h5 {
+    margin-top: 10px;
+}
+
+.container-start {
+    display: flex;
+    height: 100px;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.container-start > div {
+    height: 50px;
+    width: 50px;
+}
+
+.container-end {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.container-end > div {
+    height: 50px;
+    width: 50px;
+}
+
+.container-center {
+    display: flex;
+    height: 200px;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.container-center > div {
+    height: 50px;
+    width: 50px;
+}
+
+.container-space-around {
+    display: flex;
+    height: 200px;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.container-space-around > div {
+    height: 50px;
+    width: 50px;
+}
+
+.container-space-evenly {
+    display: flex;
+    height: 200px;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.container-space-evenly > div {
+    height: 50px;
+    width: 50px;
+}
+
+.container-space-between {
+    display: flex;
+    height: 200px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container-space-between > div {
+    height: 50px;
+    width: 50px;
+}
+
+.container-align-content {
+    display: flex;
+    flex-flow: row wrap;
+    height: 200px;
+    align-content: normal;
+}
+
+.container-align-content > div {
+    height: 50px;
+    width: 150px;
+}
+
+.container-align-items {
+    display: flex;
+    flex-flow: row nowrap;
+    height: 200px;
+    align-items: start;
+    justify-content: start;
+}
+
+.container-align-items > div {
+    height: 50px;
+    width: 50px;
+}
+
+.container-gap {
+    display: flex;
+    flex-wrap: wrap;
+    /* row-gap: 10px;
+    column-gap: 20px; */
+    gap: 10px 20px;
+}
+
+/* .container-gap > div:not(:last-child) {
+    margin-right: 10px;
+} */
+
+.container-align-self {
+    display: flex;
+    height: 200px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+}
+
+.container-align-self > div {
+    height: 50px;
+    width: 50px;
+}
+
+.container-align-self > .child-c {
+    align-self: end;
+}
+
+.container-order {
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+}
+
+.container-order > div {
+    height: 50px;
+    width: 50px;
+}
+
+.container-order > .child-a {
+    order: 3;
+}
+
+.container-order > .child-b {
+    order: 1;
+}
+
+.container-order > .child-c {
+    order: 2;
+}

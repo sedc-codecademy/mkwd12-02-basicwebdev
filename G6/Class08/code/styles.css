@@ -218,3 +218,41 @@ we can see visually the "invisibe border"  that HTML assigned to the element */
     won't  be calculated and added on top of the width and the height*/
     box-sizing: border-box;
 }
+
+/* BORDER & OVERFLOW */
+#noOverflow {
+
+    /* border-style: dashed;
+    border-width: 5px;
+    border-color: blue; */
+
+    /* SHORTHAND
+    same as above but shorter */
+    /* this rule will apply border
+    on each sides */
+    border: 5px solid blue;
+    border-radius: 10px;
+    border-top: 5px solid red;
+
+    /* We can specify borders only on desired sides as-well */
+    /* border-top-style: solid;
+    border-top-width: 2px;
+    border-top-color: red;
+    
+    border-right-style: solid;
+    border-right-width: 2px;
+    border-right-color: blue; */
+
+
+    /* Same as above but shorter */
+    /* border-top: 2px solid red;
+    border-right: 2px solid blue; */
+    box-sizing: border-box;
+    padding: 20px;
+    height: 150px;
+    /* width: 50%; */
+    /* overflow-y: scroll;
+    overflow-x: scroll; */
+
+    overflow: auto;
+}

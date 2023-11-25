@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+}
+
+h3 {
+    border: 3px solid brown;
+    width: 70%;
+}
+main {
+    border: 2px solid black;
+}
+#relativeHeading {
+    /* position: relative css rule
+    will take out the element of the normal flow
+    and now it is in the relative flow */
+    position: relative;
+    top: 25px;
+    right: 10px;
+}
+
+/* SCENARIO #1 */
+/* ABSOLUTE EXAMPLE */
+#absoluteHeading {
+    position: absolute;
+    right: 10px;
+}
+
+/* position: absolute rule
+will move the element as much px/% in the containing element (body element) */
+#absoluteBox {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    right: 15px;
+}
+
+
+/* SCENARIO 2 EXAMPLE => Where we have absolute box inside relative box */
+
+#relativeBox {
+    width: 400px;
+    height: 300px;
+    background-color: bisque;
+    position: relative;
+    margin-left: 30px;
+}
+
+#absoluteBoxInsideRelative{
+    width: 60px;
+    height: 60px;
+    background-color: red;
+    position: absolute;
+    right: 15px;
+    bottom: 30px
+}
+
+/* Example relative + absolute */
+
+img {
+    width: 300px;
+}
+
+#productCard {
+    border: 2px solid grey;
+    width: 50%;
+    position: relative;
+
+}
+
+#addToCart {
+    position: absolute;
+    right: 0;
+}
+
+#close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+/* POSITION FIXED: Chatbot */
+
+#chatBot {
+    width: 100px;
+    height: 100px;
+    background-image: url("./chatbot.png");
+    background-size: cover;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+/* Position Sticky */
+
+header {
+    border-bottom: 3px solid salmon;
+    margin-bottom: 20px;
+    position: sticky;
+    top:0px;
+    background-color: white;
+    z-index: 2;
+    
+}
+
+h1 {
+    display: inline-block;
+}
+
+nav {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+}
+
+/* Selecting the direct ul child element that is inside nav element */
+nav > ul {
+    list-style-type: none;
+}
+
+/* ALL LIST ITEMS that are inside UL that is inside NAV  */
+nav > ul li {
+    display: inline;
+    cursor: pointer;
+}
+
+/* Float example */
+
+/* select all img elemtnts that are inside the element with id #movieOne no matter if it's child or not */
+#movieOne img {
+    float: right;
+}
+
+.movieOne {
+    width: 49%;
+}
