@@ -1,0 +1,128 @@
+h1 {
+    background-color: rgb(227, 81, 81);
+    color: rgb(213, 226, 237);
+    text-align: center;
+}
+
+.container{
+    border: 3px solid lightcoral;
+    width: 60%;
+    margin: 10px auto;
+}
+
+section{
+    background-color: white;
+    margin: 20px 0;
+}
+
+/* Mobile first */
+
+/* Desktop media query */
+@media screen and (min-width: 1200px){
+    h1{
+        width:80%;
+        background-color: rebeccapurple;
+        margin: 0 auto;
+    }
+    .container{
+        border: 3px dashed rgb(240, 219, 128);
+        width: 60%;
+        margin: 10px auto;
+    }
+}
+
+/* Desktop first */
+/* Mobile media query */
+@media screen and (max-width: 440px){
+    h1{
+        width:50%;
+        background-color: aqua;
+        margin: 0 auto;
+    }
+    .container{
+        border: 2px dotted rgb(128, 240, 152);
+        width: 70%;
+        margin: 10px auto;
+    }
+} 
+
+/* Tablet media query */
+@media screen and (min-width:440px) and (max-width: 770px){
+    h1{
+        width:50%;
+        background-color: rgb(30, 255, 0);
+        margin: 0 auto;
+    }
+    .container{
+        border: 2px dotted rgb(240, 128, 203);
+        width: 50%;
+        margin: 10px auto;
+    }
+}
+
+
+/* Responsive layout example */
+
+.layout-example{
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.layout-example > div:nth-child(1){
+    width: 20%;
+    background-color: lightgreen;
+    height: 100%;
+}
+
+.layout-example > div:nth-child(2){
+    width: 40%;
+    background-color: lightcoral;
+    height: 100%;
+}
+
+.layout-example > div:nth-child(3){
+    width: 40%;
+    background-color: lightblue;
+    height: 100%;
+}
+
+/* Tablet media query */
+@media screen and (max-width:780px) {
+    .layout-example{
+        height: 600px;
+    }
+    
+    .layout-example > div:nth-child(1){
+        width: 40%;
+        height: 50%;
+    }
+    
+    .layout-example > div:nth-child(2){
+        width: 60%;
+        height: 50%;
+    }
+    
+    .layout-example > div:nth-child(3){
+        width: 100%;
+        height: 50%;
+    }
+}
+
+/* Mobile media query */
+@media screen and (max-width: 440px){
+    .layout-example{
+        height: 800px;
+    }
+    
+    .layout-example > div:nth-child(1){
+        width: 100%;
+        height: 50%;
+    }
+    
+    .layout-example > div:nth-child(2){
+        width: 100%;
+        height: 50%;
+    }
+}
