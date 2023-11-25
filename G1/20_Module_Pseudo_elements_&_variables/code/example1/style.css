@@ -1,0 +1,18 @@
+h1::selection {
+    background-color: lightcoral;
+    color: brown;
+    cursor: not-allowed;
+    outline: black 2px;
+}
+
+/* ::placeholder */
+
+h1::before {
+    content: 'this is before';
+    background-color: yellow;
+}
+
+h1::after {
+    content: '>>>';
+    background-color: green;
+}
