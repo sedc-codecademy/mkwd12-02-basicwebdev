@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+.container {
+    display: grid;
+    height: 100%;
+    /* column-gap: 10px;
+    row-gap: 15px; */
+    gap: 15px 10px;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    /* grid-template-columns: repeat(3, 150px); */
+    /* grid-template-rows: 200px 300px 10%; */
+    /* grid-template-rows: repeat(3, 150px); */
+    /* shorthand for grid template columns and rows */
+    grid-template: repeat(3, 150px) / repeat(3, 100px);
+
+    /* Used for aligning items within a grid */
+    /* justify items controls the X axis */
+    /* justify-items: stretch; */
+    /* align items controls the Y axis */
+    /* align-items: stretch; */
+    /* shorthand for align items and justify items */
+    place-items: stretch stretch;
+    /* ultra shorthand */
+    /* place-items: stretch; */
+
+    /* Used for aligning the Grid */
+     /* justify content controls the X axis */
+    /* justify-content: center; */
+    /* align content controls the Y axis */
+    /* align-content: center; */
+    /* Shorthand for align content and justify content */
+    place-content: center center;
+
+    grid-template-areas: 
+        "header header header"
+        "main main sidebar"
+        "main main sidebar";
+}
+
+.item {
+    background-color: skyblue;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.item:nth-child(1) {
+    /* display: grid; */
+    /* grid-area: header; */
+    /* grid-column-start: 1;
+    grid-column-end: 3; */
+    /* grid-column: 1 / 4; */
+
+    /* justify-self: start;
+    align-self: start; */
+    /* shorthand for align self and justify self */
+    place-self: start start;
+
+    /* ultra shorthand */
+    /* place-self: start; */
+}
+.item:nth-child(2) {
+    /* grid-area: main; */
+    display: grid;
+    /* grid-row-start: 2;
+    grid-row-end: 3; */
+    /* grid-row: 2 / 4; */
+}
+.item:nth-child(3) {
+    /* grid-area: sidebar; */
+}
+.item:nth-child(4) {
+    /* grid-area: main; */
+}
+.item:nth-child(5) {
+    /* grid-area: main; */
+}
+.item:nth-child(6) {
+    /* grid-area: sidebar; */
+}
+.item:nth-child(7) {
+    /* grid-area: main; */
+}
+.item:nth-child(8) {
+    /* grid-area: main; */
+}
+.item:nth-child(9) {
+    /* grid-area: sidebar; */
+}

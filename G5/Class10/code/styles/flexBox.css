@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #333;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container{
+    width: 60%;
+    margin: 0 auto;
+}
+
+h1{
+    color: white;
+    font-size: 30px;
+    padding: 3em;
+}
+
+article{
+    background-color:white;
+    padding: 5em;
+    margin: 20px 0;
+}
+
+h2{
+    font-size: 18px;
+    color:rgb(95, 95, 78);
+    text-transform: uppercase;
+    padding: 2em 0;
+}
+
+.parent{
+    border: 5px solid lightcoral;
+}
+
+.item{
+    background-color:deepskyblue;
+    color: white;
+    font-weight: 700;
+    padding: 15px 0;
+    margin: 5px;
+}
+
+/* Display Flex */
+.example-flex{
+    display: flex;
+    /* default flex-direction: row */
+}
+
+/* Flex Direction */
+.example-direction{
+    display: flex;
+    /* row, row-reverse, column, column-reverse */
+    flex-direction: column-reverse;
+}
+
+.example-direction .item{
+    width: 50%;
+}
+
+/* Flex Wrap */
+
+.example-wrap{
+    display: flex;
+    /* default flex-wrap: nowrap */
+    flex-wrap: wrap;
+
+}
+
+.example-wrap .item{
+    width: 20%;
+}
+
+/* Justify Content */
+.example-justify-content{
+    display: flex;
+    /*space-evenly, flex-start, flex-end, space-between, center, space-around*/
+    justify-content: space-around;
+}
+
+.example-justify-content .item{
+    width: 10%;
+}
+
+/* Align Items */
+.example-align-items{
+    display: flex;
+    height: 250px;
+
+    /* default: stretch */
+    /*align-items: flex-start, flex-end, center */
+    align-items:center;
+    justify-content:center;
+}
+
+.example-align-items .item{
+    width: 10%;
+}
+
+/* Align Content */
+.example-align-content{
+    display: flex;
+    height: 450px;
+    flex-wrap: wrap;
+
+    /* default: stretch */
+
+    /*align-content: flex-start, flex-end, center, space-between, space-around*/
+    align-content: space-around;
+    justify-content: center;
+}
+
+.example-align-content .item{
+    width: 20%;
+}
+
+/* Item Order */
+.example-order{
+    display: flex;
+}
+
+.example-order .item{
+    width: 20%;
+}
+
+/* :nth-child() selector */
+
+.example-order .item:nth-child(1){
+    order: 3;
+}
+
+.example-order .item:nth-child(2){
+    order: 5;
+}
+
+.example-order .item:nth-child(3){
+    order: 4;
+}
+
+.example-order .item:nth-child(4){
+    order: 6;
+}
+
+.example-order .item:nth-child(5){
+    order: 2;
+}
+
+.example-order .item:nth-child(6){
+    order: 1;
+}
+
+/* Flex Grow */
+.example-grow{
+    display: flex;
+}
+
+.example-grow .item{
+    flex-grow: 1;
+}
+
+.example-grow .item:nth-child(3){
+    flex-grow: 3;
+}
+
+.example-grow .item:nth-child(5){
+    flex-grow: 2;
+}
+
+/* Flex Shrink */
+.example-shrink{
+    display: flex;
+}
+
+.example-shrink .item{
+    flex-shrink: 1;
+    width: 150px;
+}
+
+.example-shrink .item:nth-child(2){
+    flex-shrink: 2;
+}
+
+.example-shrink .item:nth-child(4){
+    flex-shrink: 3;
+}
+
+/* Flex Basis */
+.example-basis{
+    display: flex;
+}
+
+.example-basis .item{
+
+    flex-basis: 50px;
+
+    /* shorthand writing of flex-grow flex-shrink flex-basis */
+    /* flex: 1 1 50px; */
+}
+
+.example-basis .item:nth-child(3){
+    flex: 2 1 150px
+}
+

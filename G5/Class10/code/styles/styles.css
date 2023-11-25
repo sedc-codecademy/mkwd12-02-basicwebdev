@@ -1,0 +1,74 @@
+html{
+    /*The box-sizing property allows us to include the padding and border in an element's total width and height.*/
+    box-sizing: border-box;
+}
+
+body{
+    background-color: lightskyblue;
+}
+
+section{
+    background-color:rgb(216, 228, 228);
+    border: 2px dashed rgb(120, 145, 154);
+    /* top&bottom  left&right */
+    margin: 60px 0px;
+    
+    /* top&bottom  left&right */
+    padding: 20px 50px;
+}
+
+span{
+    display: inline-block;
+    border: 2px solid lightcoral;
+    padding: 20px;
+}
+
+/* position: relative */
+.relative{
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 100px;
+}
+
+/* position: absolute */
+
+/* section with class absolute-parent */
+.absolute-parent{
+    position: relative;
+    padding: 80px 50px;
+}
+
+/* span with class absolute */
+.absolute{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/* position: fixed */
+.fixed{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color:rgba(240, 128, 128, 0.292);
+    z-index: 999;
+}
+
+/* position: sticky */
+.sticky h2{
+    position: sticky;
+    top: 0;
+    background-color: rgb(118, 183, 161);
+    /* top&bottom&left&right */
+    padding: 20px;
+}
+
+/* float: left */
+.float{
+    float: left;
+}
+
+.item{
+    float: right;
+}
