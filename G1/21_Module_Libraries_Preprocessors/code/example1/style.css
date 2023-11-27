@@ -1,0 +1,41 @@
+:root {
+    --default-color: brown;
+    --default-padding: 20px;
+    --heading-one-font-size: 20px;
+    --medium-text-size: 14px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* without variables and css nesting */
+/* header > h1 {
+    font-size: 20px;
+} */
+
+/* with vars and css nesting */
+header {
+    > h1 {
+        font-size: var(--heading-one-font-size);
+    }
+    > nav {
+        > ul {
+            display: flex;
+            list-style: none;
+
+            & li {
+                background-color: var(--default-color);
+                padding: var(--default-padding);
+            }
+        }
+    }
+}
+
+header, main, footer {
+    font-size: var(--medium-text-size);
+    padding: var(--default-padding);
+}
+

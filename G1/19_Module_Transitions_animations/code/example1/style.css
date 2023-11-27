@@ -27,3 +27,75 @@
     box-shadow: 5px 5px 5px black;
     border-radius: 20px;
 }
+
+.transform-div {
+    font-size: 40px;
+    border: 1px solid black;
+    display: inline-block;
+    background-color: lightblue;
+    padding: 20px;
+    margin: 20px;
+
+    transform: rotate(45deg) skew(10deg, 20deg) scale(2);
+}
+
+/* without breakpoints */
+@keyframes move {
+    from {
+        top: 0;
+        left: 0;
+    }
+    to {
+        top: 0;
+        left: 438px;
+        /* right: 438px; NOT LIKE THIS, USE THE SAME PROPERTY!!!! */
+    }
+}
+
+/* animation with breakpoints */
+@keyframes move-again {
+    0% {
+        top: 0;
+        left: 0;
+    }
+    25% {
+        top: 10px;
+        left: 10px;
+    }
+    50% {
+        top: 20px;
+        left: 20px;
+    }
+    75% {
+        top: 75px;
+        left: 15px;
+    }
+    100% {
+        top: 80px;
+        left: 68px;
+    }
+}
+
+.container {
+    margin-top: 150px;
+    height: 100px;
+    width: 500px;
+    border: 1px solid black;
+    background-color: lightcoral;
+    position: relative;
+}
+
+.item {
+    display: inline-block;
+    border: 1px solid black;
+    background-color: yellow;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: move-again 5s linear 1s;
+}
+
+.item:hover {
+    animation: move 5s linear infinite;
+}
