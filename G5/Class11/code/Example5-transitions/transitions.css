@@ -1,0 +1,107 @@
+.box {
+  background-color: darkgreen;
+  border-radius: 6px;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  margin: 10px;
+  line-height: 100px;
+  color: white;
+
+  transition-property: transform;
+  -webkit-transition-property: background-color, border-radius;
+  -moz-transition-property: background-color, border-radius;
+  -o-transition-property: background-color, border-radius;
+
+  transition-duration: 5s, 0.1s;
+  -webkit-transition-duration: 5s, 0.1s;
+  -moz-transition-duration: 5s, 0.1s;
+  -o-transition-duration: 5s, 0.1s;
+
+  transition-timing-function: ease, ease-in-out;
+  -webkit-transition-timing-function: ease, ease-in-out;
+  -moz-transition-timing-function: ease, ease-in-out;
+  -o-transition-timing-function: ease, ease-in-out;
+  /* transition-delay: 2s; */
+}
+
+.box:hover {
+  /* background-color: tomato;
+  border-radius: 50px; */
+  transform: rotate(30deg);
+}
+
+.tansition-timing {
+  color: white;
+  background: yellowgreen;
+  height: 100px;
+  width: 100px;
+  border-radius: 6px;
+  margin: 10px;
+  transition-property: width;
+  transition-duration: 2s;
+}
+
+.div1 {
+  transition-timing-function: linear;
+}
+.div2 {
+  transition-timing-function: ease;
+}
+.div3 {
+  transition-timing-function: ease-in;
+}
+.div4 {
+  transition-timing-function: ease-out;
+}
+.div5 {
+  transition-timing-function: cubic-bezier(0, 0.16, 0.53, 2.03);
+}
+
+.tansition-timing:hover {
+  width: 400px;
+}
+
+#container {
+  width: 700px;
+  height: 500px;
+  background-color: aqua;
+  position: relative;
+}
+
+#child {
+  width: 25%;
+  height: 25%;
+  background-color: blue;
+  position: absolute;
+  /* transition: transform 2s ease-in; */
+  /* animation: move-arround 3s ease-in; */
+  animation: move-arround 3s ease-in forwards infinite alternate;
+}
+
+#container:active #child {
+  /* transform: translateX(100%); */
+  animation-play-state: paused;
+}
+
+@keyframes move-arround {
+  0% {
+    transform: translateX(0);
+  }
+
+  33% {
+    transform: translateY(300%);
+  }
+  50% {
+    background-color: crimson;
+  }
+
+  66% {
+    transform: translate(300%, 300%);
+  }
+
+  100% {
+    transform: translateX(300%);
+    background-color: blueviolet;
+  }
+}
