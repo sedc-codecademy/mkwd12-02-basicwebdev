@@ -1,0 +1,168 @@
+body{
+    background-color: #f3f3f3;
+    padding: 3rem;
+}
+
+section{
+    background-color: bisque;
+    padding: 3rem;
+    margin-bottom: 3rem;
+}
+
+.btn{
+    border: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+}
+
+#transition .btn{
+    background-color: cadetblue;
+    border-radius: 4px;
+
+    /* transition */
+    transition-property: background-color, border-radius;
+    transition-duration: 1s, 400ms;
+    transition-timing-function: ease-in, cubic-bezier(0.74, 0.18, 0.01, 0.96);
+    transition-delay: 1s, 500ms;
+
+    /* shorthand transition CSS property */
+    transition: background-color 1s ease-in 1s, 
+                border-radius 400ms cubic-bezier(0.74, 0.18, 0.01, 0.96) 500ms;
+}
+
+#transition .btn:hover{
+    background-color: coral;
+    border-radius: 16px;
+}
+
+.window{
+    background-color: cornflowerblue;
+    padding: 3rem;
+    width: 150px;
+    box-sizing: border-box;
+    margin: 1rem 0;
+
+    /* transition */
+    transition: width 400ms;
+}
+
+.window:active{
+    width: 100%;
+}
+
+
+#transform .btn{
+    background-color: darkkhaki;
+
+    /* transform */
+    transform: skewX(-5deg);
+    transform-origin: top right;
+
+    transition: transform 200ms ease-in-out;
+}
+
+#transform .btn:hover{
+    transform: skewX(-15deg) translateY(-5px) rotate(20deg);
+}
+
+
+
+/* animation definition */
+@keyframes drop{
+    0%{
+        top: 0%;
+        transform: translateX(0px);
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+
+    10%{
+        top: 84%;
+        transform: translateX(50px);
+        animation-timing-function: ease-out;
+        opacity: 1;
+    }
+
+    30%{
+        top: 20%;
+        animation-timing-function: ease-in;
+    }
+
+    50%{
+        top: 84%;
+        animation-timing-function: ease-out;
+    }
+
+    70%{
+        top: 50%;
+        animation-timing-function: ease-in;
+    }
+
+    100%{
+        top: 84%;
+        transform: translateX(200px);
+        animation-timing-function: ease-out;
+    }
+}
+
+
+#animation{
+    padding: 8rem 3rem;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.ball{
+    background-color: darkslategray;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0%;
+    left: 20%;
+    box-sizing: border-box;
+
+    /* animation */
+    animation-name: drop;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+    animation-delay: 0.4s;
+    animation-iteration-count: 4;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+
+    /* animation shorthand CSS property */
+    animation: drop 1.5s ease 0.4s 4 normal forwards;
+}
+
+#animation:active .ball{
+    animation-play-state: paused;
+}
+
+@keyframes slide{
+    0%{
+        bottom: -20px;
+        opacity: 0;
+    }
+
+    100%{
+        bottom: 0px;
+        opacity: 1;
+    }
+}
+
+.ground{
+    height: 20px;
+    width: 100%;
+    background-color: darkgray;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    box-sizing: border-box;
+
+    /* animation */
+    animation: slide 300ms ease-out;
+}
