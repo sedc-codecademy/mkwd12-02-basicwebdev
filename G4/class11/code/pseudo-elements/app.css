@@ -1,0 +1,47 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.box {
+  margin: 30px;
+  width: 100px;
+  height: 130px;
+  background-color: lightblue;
+  position: relative;
+}
+
+.box::before {
+  content: "";
+  height: 40px;
+  width: 40px;
+  background-color: white;
+  display: block;
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  transform: rotate(45deg);
+}
+
+.box::after {
+  content: ".txt";
+  height: 80px;
+  width: 80px;
+  /* background-color: lightgreen; */
+  display: block;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  margin: 10px;
+  display: grid;
+  font-size: 2.5rem;
+  place-items: flex-end;
+  padding: 10px;
+  border: 2px solid rgba(54, 54, 137, 0.274);
+  border-radius: 4px;
+}
