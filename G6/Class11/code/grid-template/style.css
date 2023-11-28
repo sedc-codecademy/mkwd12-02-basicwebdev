@@ -1,0 +1,39 @@
+#container {
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    grid-template-rows: auto 1fr 1fr;
+    /* vh = view height */
+    height: 100vh;
+
+    grid-template-areas: 
+    "myHeader myHeader"
+    "nav main"
+    "aside main"
+    "footer footer"
+    ;
+}
+
+header,nav,main,aside, footer {
+    border: 1px solid burlywood;
+    padding: 20px;
+}
+
+header {
+    grid-area: myHeader;
+}
+
+nav {
+    grid-area: nav;
+}
+
+main {
+    grid-area: main;
+}
+
+aside {
+    grid: aside;
+}
+
+footer {
+    grid-area: footer;
+}

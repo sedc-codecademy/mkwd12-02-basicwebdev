@@ -1,0 +1,66 @@
+.box {
+    border: 1px solid black;
+    background-color: bisque;
+    padding: 10px;
+}
+
+/* Grid columns */
+#container {
+    display: grid;
+    /* fr = fraction */
+    /* grid-template-columns: 200px 1fr 200px; */
+
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    /* same as above but shorter, only when all of the columns share the same width */
+    grid-template-columns: repeat(3, 1fr);
+
+    /* grid-gap is no longer used among all the browser. It is better to use gap. */
+    /* grid-gap: 10px; */
+    gap: 10px;
+}
+
+/* Grid rows */
+#container-rows {
+    display: grid;
+    grid-template-rows: 3fr 1fr 2fr;
+
+    /* grid-auto-rows will apply value of the rows that won't be affected by grid-template-rows */
+    grid-auto-rows: 2fr;
+    gap: 10px;
+}
+
+/* Grid rows and columns */
+#container-rows-columns {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 2fr 3fr;
+}
+
+/* Grid span */
+
+#container-span {
+    gap: 5px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+#childOne {
+    /* grid-column-start: 1;
+    grid-column-end: 3; */
+
+    /* start from position 1, and end on the ending of position 2 / or end at the begining of position 3 */
+    /* grid-column: 1 / 3; */
+
+    /* using span, means take the space of position 3 as-well. In our case, we start at 1 and end on position 3 */
+    grid-column: 1 / span 2;
+
+    /* grid-row-start: 1;
+    grid-row-end: 3; */
+    /* same as above, shorthand */
+
+    grid-row: 1 / 3;
+    /* grid-row: 1 / span 3 */
+}
+

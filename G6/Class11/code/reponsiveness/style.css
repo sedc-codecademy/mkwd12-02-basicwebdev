@@ -1,0 +1,118 @@
+/* BASIC EXAMPLES */
+#welcomeMessage {
+    color: brown;
+    text-shadow: 1px 2px 3px black;
+}
+
+/* max-width 700px: means whenever the screen width is below 700px */
+@media  screen and (max-width: 700px) {
+    /* when the condition gets satisfied
+    condition is: screen is below 700px,
+    this new css rules will apply */
+    #welcomeMessage {
+        color: blue;
+    }
+}
+
+#myBox {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+
+/* min-width: 500px: means whenver the screen width is above 500px. When this condition is met,
+this new rules will be applied */
+@media screen and (min-width: 500px) {
+    #myBox {
+        width: 300px;
+        height: 300px;
+        background-color: chocolate;
+    }
+
+    #welcomeMessage {
+        font-style: italic;
+    }
+}
+
+@media screen and (min-width: 600px){
+    #myBox {
+        background-color: chartreuse;
+    }
+
+}
+
+
+/* whenever we are on 300px height or below */
+@media screen and (max-height: 300px) {
+    #myBox {
+        width: 700px;
+    }
+}
+
+/* CHAINING CONDITIONS */
+/* This means whenever we are more then 200px width and less then 300px width => long story short: in between 200px and 300px */
+@media screen and (min-width: 200px) and (max-width: 300px){
+    body {
+        /* background-color: red; */
+    }
+
+    #welcomeMessage {
+        text-shadow: none;
+    }
+}
+
+
+/* REAL LIFE EXAMPLE */
+
+/* DESKTOP VERSION OF THE HEADER */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 0 30px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 3px solid grey;
+}
+
+#navList {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+}
+
+#navList li {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+}
+
+/* MOBILE VERSION OF THE HEADER */
+
+/* from 0px until 500px */
+@media screen and (max-width: 500px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #navList {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    #navList li {
+        text-align: center;
+    }
+}
