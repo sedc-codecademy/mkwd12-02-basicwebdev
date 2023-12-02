@@ -1,0 +1,117 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    margin: 50px;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+
+    /*Mandatory properties */
+    transition-property: background-color, border-radius, transform;
+    transition-duration: 3s;
+
+    /* optional properties */
+    transition-timing-function: ease-in-out;
+    transition-delay: 2s;
+
+    /* webkits - used for older browsers */
+    -webkit-transition: all 3s ease-in-out 2s;
+    -moz-transition: all 3s ease-in-out 2s;
+    -ms-transition: all 3s ease-in-out 2s;
+    -o-transition: all 3s ease-in-out 2s;
+
+    /* transition-property, transition-duration, transition-timing-function, transition-delay */
+    transition: all 3s ease-in-out 2s;
+}
+
+
+.box:hover {
+    background-color: red;
+    border-radius: 50px;
+    transform: rotate(-180deg) scale(2);
+}
+
+.stage {
+    width: 500px;
+    height: 300px;
+    background-color: lightskyblue;
+    margin: 0 auto;
+    position: relative;
+}
+
+.ball {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50px;
+    position: absolute;
+
+    /* Animation */
+    animation-name: slide;
+    animation-duration: 5s;
+
+    /* optional properties */
+    animation-timing-function: ease-out;
+    animation-delay: 1s;
+
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+
+    /* animation-name, animation-duration, animation-timing-function, animation-iteration-count,
+    animation-direction, animation-fill-mode */
+    animation: slide 5s ease-in-out infinite alternate forwards;
+}
+
+.stage:active .ball {
+    animation-play-state: paused;
+}
+
+/* @keyframes slide {
+    0% {
+        top: 0;
+        left: 0;
+    }
+    50% {
+       top: 250px;
+       left: 225px;
+       background-color: green;
+    }
+    100% {
+        top: 0;
+        left: 450px;
+        background-color: yellow;
+    }
+} */
+
+
+@keyframes slide {
+    0% {
+        top: 0;
+        left: 0;
+    }
+    25% {
+       top: 250px;
+       left: 0px;
+       background-color: green;
+    }
+    50% {
+        top: 250px;
+        left: 450px;
+        background-color: yellow;
+    }
+    75% {
+        top: 0;
+        left: 450px;
+        background-color: yellow;
+    }
+    100% {
+        top: 0;
+        left: 0;
+        background-color: blue;
+    }
+}
+
+
