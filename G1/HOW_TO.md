@@ -37,6 +37,10 @@ I. By using GitHub Desktop
 4. Choose where you want to save the repository on your computer
 5. Click on "Clone"
 
+Video example: 
+
+https://github.com/sedc-codecademy/mkwd12-02-basicwebdev/assets/148893109/c69161c3-446a-402b-8aaa-bd6592587453
+
 II. Download the repository as a zip file
 1. Go to the repository you want to clone
 2. Click on the green "Code" button
